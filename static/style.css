@@ -5,7 +5,6 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -15,66 +14,74 @@ body {
   background-image: url(img/background.jpg);
   background-size: cover;
   background-position: center;
-  background-color: #222;
   color: #ddd;
   line-height: 1.6;
+  font-family: sans-serif;
 }
 
 .container {
-  margin: auto;
-  background: rgb(38, 38, 38);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  padding-top: 10px;
+  height: 947px;
+  width: 1039px;
+  background: rgba(67, 60, 60, 0.8);
+  backdrop-filter: blur(3px);
+  border-radius: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-h1 {
-  text-align: center;
-  color: #ddd;
+.container p {
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 20px;
+  
 }
 
-.section p {
-  color: #bbb;
-  text-align: justify;
-  margin-bottom: 2.5px;
-}
-
-.section h2 {
-  color: #ccc;
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-pre {
-  padding: 10px;
-  border-radius: 5px;
-  overflow-x: auto;
-  color: #ddd;
-  display: grid;
-  grid-template-columns: repeat(13, 50px);
-  gap: 10px;
-}
-
-pre img {
-  width: 50px;
-  height: 50px;
-}
-
-.section a {
-  color: #6fa7ff;
-  text-decoration: none; 
-  display: block;
+.container h1{
   text-align: center; 
-  margin-bottom: 10px; 
+  font-size: 50px; 
+  font-weight: bold; 
+  font-family: 'Open Sans', sans-serif;
 }
 
-.section a:hover {
-  text-decoration: underline; 
+.container h2 {
+  margin-top: 20px;
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+.text p {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+.projects a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.projects p {
+  font-weight: normal;
+  font-size: 23px;
+}
+
+.technologies img {
+  height: 64px;
+  width: 64px;
+  margin: 4px 12px;
 }
 
 .bottom {
-  width: auto;
-  height: auto;
-  background-color: #222;
+  margin-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
   text-align: center;
+  background-color: rgba(54, 54, 54, 0.9);
+  border-radius: 36px;
+  width: 1039px;
 }
