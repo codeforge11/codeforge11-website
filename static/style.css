@@ -22,7 +22,8 @@ body {
 .container {
   padding-top: 10px;
   height: 947px;
-  width: 1039px;
+  width: 90%;   
+  max-width: 1039px; 
   background: rgba(67, 60, 60, 0.8);
   backdrop-filter: blur(3px);
   border-radius: 36px;
@@ -35,7 +36,7 @@ body {
   font-size: 22px;
   font-weight: bold;
   padding-left: 20px;
-  
+
 }
 
 .container h1{
@@ -83,5 +84,6 @@ body {
   text-align: center;
   background-color: rgba(54, 54, 54, 0.9);
   border-radius: 36px;
-  width: 1039px;
+  width: 100%; 
+  max-width: 1039px;
 }
