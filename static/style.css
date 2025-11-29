@@ -57,7 +57,12 @@ body {
     padding-left: 20px;
 }
 
-.projects a {
+.technologyBoard,
+#projects{
+    background-color: rgba(13, 13, 13, 0.100);
+}
+
+#projects a {
     color: inherit;
     font-weight: bold;
     font-size: 24px;
