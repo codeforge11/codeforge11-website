@@ -15,9 +15,9 @@ func main() {
 		c.File("./sites/index.html")
 	})
 
-	router.GET("/projects", func(c *gin.Context) {
-		c.File("./sites/projects.html")
-	})
+	// router.GET("/projects", func(c *gin.Context) {
+	// 	c.File("./sites/projects.html")
+	// })
 
 	err := router.Run(":1234")
 
