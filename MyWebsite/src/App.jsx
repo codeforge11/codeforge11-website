@@ -72,8 +72,8 @@ function App() {
                               {/* finished */}
 
                             <tr>
-                                <td><a href="https://www.php.net" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/php-auto.svg" /></a></td>
-                                <td><a href="https://www.ruby-lang.org" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/ruby.svg" /></a></td>
+                                <td><a href="https://www.php.net" target="_blank"><img src={mainIconFolder+"php.svg"} /></a></td>
+                                <td><a href="https://www.ruby-lang.org" target="_blank"><img src={mainIconFolder+"ruby.svg"} /></a></td>
                                 <td class="empty"></td>
                                 <td class="empty"></td>
                                 <td class="empty"></td>
@@ -81,13 +81,14 @@ function App() {
                                 <td class="empty"></td>
                                 <td class="empty"></td>
                                 <td class="empty"></td>
-                                <td><a href="https://www.torproject.org/" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/main/assets/tor-auto.svg" /></a></td>
-                                <td><a href="https://www.gimp.org/" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/main/assets/gimp-auto.svg" /></a></td>
-                                <td><a href="https://www.figma.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/figma-auto.svg" /></a></td>
-                                <td><a href="https://developer.android.com/studio" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/androidstudio-auto.svg" /></a></td>
-                                <td><a href="https://code.visualstudio.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/vscode-auto.svg" /></a></td>
-                                <td><a href="https://visualstudio.microsoft.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/visualstudio-auto.svg" /></a></td>
+                                <td><a href="https://www.torproject.org/" target="_blank"><img src={mainIconFolder+"tor.svg"} /></a></td>
+                                <td><a href="https://www.gimp.org/" target="_blank"><img src={mainIconFolder+"gimp.svg"} /></a></td>
+                                <td><a href="https://www.figma.com" target="_blank"><img src={mainIconFolder+"figma.svg"} /></a></td>
+                                <td><a href="https://developer.android.com/studio" target="_blank"><img src={mainIconFolder+"androidstudio.svg"} /></a></td>
+                                <td><a href="https://code.visualstudio.com" target="_blank"><img src={mainIconFolder+"vscode.svg"} /></a></td>
+                                <td><a href="https://visualstudio.microsoft.com" target="_blank"><img src={mainIconFolder+"vs.svg"} /></a></td>
                             </tr>
+                            {/* finished */}
 
                             <tr>
                                 <td><a href="https://www.python.org" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/python-auto.svg" /></a></td>
