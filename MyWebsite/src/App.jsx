@@ -1,45 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>codeforge11</title>
-    <base href="static/">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/logomark.svg" type="image/x-icon">
-</head>
+// import reactLogo from './assets/react.svg'
+import './index.css'
 
-<body>
+function App() {
+  const mainIconFolder = "src/assets/icons/";
+ 
+  return (
+    <>
+      <header>
+          <div class="mx-auto flex h-full max-w-content w-full" >
+              <a href="/"><img src="src/assets/img/logomark.svg" alt="logomark" height="90" /></a>
+          </div>
 
-    <header>
-        <div class="mx-auto flex h-full max-w-content w-full" >
-            <a href="/"><img src="img/logomark.svg" alt="logomark" height="90"></a>
-        </div>
-
-    </header>
+      </header>
     
-    <div class="container">
-            <h1> Hello! I'm codeforge11</h1>
-            <div class="text">
-                <p>I specialize in Go/Golang.</p>
-                <p>I create efficient software solutions with clean code. Check out my projects and skills in software engineering.</p>
-            </div>
+      <div class="container">
+        <h1> Hello! I'm codeforge11</h1>
+          <div class="text">
+            <p>I specialize in Go/Golang.</p>
+            <p>I create efficient software solutions with clean code. Check out my projects and skills in software engineering.</p>
+          </div>
 
-            <h2>My projects:</h2>
-            <div id="projects">
-                <p>&#9679; <a href="https://github.com/codeforge11/SQLMason">SQLMason</a> - Simple and easy-to-use database management tool.</p>
-                <p>&#9679; <a href="https://github.com/codeforge11/CactuDash">CactuDash</a> - Minimalistic and highly optimized dashboard for efficient server management, including Docker and Docker Compose. </p>
-                <p>&#9679; <a href="https://github.com/codeforge11/TFT-DesktopClock">TFT-DesktopClock</a> - Simple digital desk clock built with Arduino and a TFT display using appropriate libraries.</p>
-            </div>
+          <h2>My projects:</h2>
+          <div id="projects">
+              <p>&#9679; <a href="https://github.com/codeforge11/SQLMason">SQLMason</a> - Simple and easy-to-use database management tool.</p>
+              <p>&#9679; <a href="https://github.com/codeforge11/CactuDash">CactuDash</a> - Minimalistic and highly optimized dashboard for efficient server management, including Docker and Docker Compose. </p>
+              <p>&#9679; <a href="https://github.com/codeforge11/TFT-DesktopClock">TFT-DesktopClock</a> - Simple digital desk clock built with Arduino and a TFT display using appropriate libraries.</p>
+          </div>
 
-            <h2>Technologies I've used:</h2>
-            <div class="technologies">
-                    <div class="technologyBoard">
+          <h2>Technologies I've used:</h2>
+              <div class="technologies">
+                      <div class="technologyBoard">
+
                         <table class="Table">
 
-                            <!-- 1 -->
                             <tr>
-                                <td><a href="https://golang.org" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/golang.svg"  /></a></td>
+                                <td><a href="https://golang.org" target="_blank"><img src={mainIconFolder + "golang.svg"}  /></a></td>
                                 <td class="empty"></td>
                                 <td class="empty"></td>
                                 <td class="empty"></td>
@@ -53,13 +48,13 @@
                                 <td class="empty"></td>
                                 <td class="empty"></td>
                                 <td class="empty"></td>
-                                <td><a href="https://www.jetbrains.com/go/" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/goland-auto.svg"  /></a></td>
-                            </tr>
+                                <td><a href="https://www.jetbrains.com/go/" target="_blank"><img src={mainIconFolder+"goland.svg"}  /></a></td>
+                            </tr> 
+                            {/* finished */}
 
-                            <!-- 2 -->
                             <tr>
-                                <td><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/html.svg"  /></a></td>
-                                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/css.svg"  /></a></td>
+                                <td><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"><img src={mainIconFolder+"html.svg"}  /></a></td>
+                                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src={mainIconFolder+"css.svg"}  /></a></td>
                                 <td class="empty"></td>
                                 <td class="empty"></td>
                                 <td class="empty"></td>
@@ -67,15 +62,15 @@
                                 <td class="empty"></td>
                                 <td class="empty"></td>
                                 <td class="empty"></td>
-                                <td><a href="https://www.arduino.cc" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/arduino.svg" /></a></td>
-                                <td><a href="https://www.jetbrains.com/ruby/" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/rubymine-auto.svg" /></a></td>
-                                <td><a href="https://www.jetbrains.com/pycharm/" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/pycharm-auto.svg"  /></a></td>
-                                <td><a href="https://www.jetbrains.com/clion/" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/clion-auto.svg"  /></a></td>
-                                <td><a href="https://www.jetbrains.com/datagrip/" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/datagrip-auto.svg"  /></a></td>
-                                <td><a href="https://www.jetbrains.com/dataspell/" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/dataspell-auto.svg"  /></a></td>
+                                <td><a href="https://www.arduino.cc" target="_blank"><img src={mainIconFolder+"arduino.svg"} /></a></td>
+                                <td><a href="https://www.jetbrains.com/ruby/" target="_blank"><img src={mainIconFolder+"rubymine.svg"} /></a></td>
+                                <td><a href="https://www.jetbrains.com/pycharm/" target="_blank"><img src={mainIconFolder+"pycharm.svg"}  /></a></td>
+                                <td><a href="https://www.jetbrains.com/clion/" target="_blank"><img src={mainIconFolder+"clion.svg"}  /></a></td>
+                                <td><a href="https://www.jetbrains.com/datagrip/" target="_blank"><img src={mainIconFolder+"datagrip.svg"}  /></a></td>
+                                <td><a href="https://www.jetbrains.com/dataspell/" target="_blank"><img src={mainIconFolder+"dataspell.svg"}  /></a></td>
                             </tr>
+                              {/* finished */}
 
-                            <!-- 3 -->
                             <tr>
                                 <td><a href="https://www.php.net" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/php-auto.svg" /></a></td>
                                 <td><a href="https://www.ruby-lang.org" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/ruby.svg" /></a></td>
@@ -94,7 +89,6 @@
                                 <td><a href="https://visualstudio.microsoft.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/visualstudio-auto.svg" /></a></td>
                             </tr>
 
-                            <!-- 4 -->
                             <tr>
                                 <td><a href="https://www.python.org" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/python-auto.svg" /></a></td>
                                 <td><a href="https://isocpp.org" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/cpp.svg" /></a></td>
@@ -104,7 +98,7 @@
                                 <td><a href="https://www.debian.org" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/debian.svg" /></a></td>
                                 <td><a href="https://getfedora.org" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/fedora-auto.svg" /></a></td>
                                 <td><a href="https://ubuntu.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/ubuntu.svg" /></a></td>
-                                <td><a href="https://pop.system76.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/popos.svg"></a></td>
+                                <td><a href="https://pop.system76.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/popos.svg"/></a></td>
                                 <td><a href="https://nodejs.org" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/nodejs-auto.svg"/></a></td>
                                 <td><a href="https://www.virtualbox.org/" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/virtualbox-auto.svg" /></a></td>
                                 <td><a href="https://www.proxmox.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/proxmox-auto.svg" /></a></td>
@@ -113,15 +107,14 @@
                                 <td><a href="https://ollama.com/" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/ollama-auto.svg" /></a></td>
                             </tr>
 
-                            <!-- 5 -->
                             <tr>
-                                <td><a href="https://kotlinlang.org/" target="_blank"><img src="https://kotlinlang.org//assets/images/favicon.svg" /></a></td>
+                                <td><a href="https://react.dev" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/react-auto.svg" /></a></td>
                                 <td class="empty"></td>
                                 <td class="empty"></td>
                                 <td class="empty"></td>
                                 <td><a href="https://endeavouros.com/" target="_blank"><img src="https://raw.githubusercontent.com/endeavouros-team/artwork-images-logo/b53c4b90276e77d530785cb60d33c6bc3cc02f45/icons/endeavour-logo-sans-logotype.svg" /></a></td>
                                 <td><a href="https://www.qt.io" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/qt-auto.svg" /></a></td>
-                                <td><a href="https://pesde.dev/" target="_blank"><img src="https://raw.githubusercontent.com/pesde-pkg/pesde/refs/heads/0.5/assets/logomark.svg"></a></td>
+                                <td><a href="https://pesde.dev/" target="_blank"><img src="https://raw.githubusercontent.com/pesde-pkg/pesde/refs/heads/0.5/assets/logomark.svg"/></a></td>
                                 <td><a href="https://www.freebsd.org/" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/bsd-auto.svg" /></a></td>
                                 <td><a href="https://www.microsoft.com/windows" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/windows-auto.svg" /></a></td>
                                 <td><a href="https://unity.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/unity-auto.svg" /></a></td>
@@ -132,7 +125,6 @@
                                 <td><a href="https://grafana.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/grafana-auto.svg" /></a></td>
                             </tr>
 
-                            <!-- 6 -->
                             <tr>
                                 <td ><a href="https://www.apachefriends.org/index.html" target="_blank"><img src="	https://www.apachefriends.org/images/xampp-logo-ac950edf.svg" /></a></td>
                                 <td ><a href="https://cockpit-project.org/" target="_blank"><img src="https://raw.githubusercontent.com/cockpit-project/cockpit/3ef5485d4aaf9baa3051f4ceececdfcc1f339940/src/branding/default/logo.svg" /></a></td>
@@ -151,7 +143,6 @@
                                 <td><a href="https://claude.ai/" target="_blank"><img src="https://claude.ai/favicon.ico" /></a></td>
                             </tr>
 
-                            <!-- 7 -->
                             <tr>
                                 <td ><a href="https://github.com/gtsteffaniak/filebrowser" target="_blank"><img src="https://raw.githubusercontent.com/gtsteffaniak/filebrowser/18738b327313acf6cc76dc41acd4a363928360d1/frontend/public/img/icons/logo.svg" /></a></td>
                                 <td ><a href="https://www.openmediavault.org/" target="_blank"><img src="https://www.openmediavault.org/favicon.svg" /></a></td>
@@ -171,20 +162,23 @@
 
                             </tr>
 
-                            </table>
-                    </div>
-            </div>
+                        </table>
 
-            <div id="bottom">
-                <div>
-                    <a href="https://discord.com/users/626479749262475294" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/discord.svg" width="64" height="64" /></a>
-                    <a href="https://stackoverflow.com/users/27400639" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/stackoverflow/stackoverflow-original.svg" width="64" height="64" /></a>
-                    <a href="https://github.com/codeforge11" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/github-auto.svg" width="64" height="64" /></a>
-                </div>
-                <p>©codeforge11 2025</p>
-            </div>
-        
-    </div>
+                      </div>
+              </div>
 
-</body>
-</html>
+        <div id="bottom">
+            <div>
+                <a href="https://discord.com/users/626479749262475294" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/discord.svg" width="64" height="64" /></a>
+                <a href="https://stackoverflow.com/users/27400639" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/stackoverflow/stackoverflow-original.svg" width="64" height="64" /></a>
+                <a href="https://github.com/codeforge11" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/github-auto.svg" width="64" height="64" /></a>
+            </div>
+            <p>Made with ❤️ by ©codeforge11 2026</p>
+        </div>
+          
+      </div>
+    </>
+  )
+}
+
+export default App

@@ -11,14 +11,15 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(img/background.jpg);
+    /* background-image: url(./img/background.jpg); */
+    background-color: oklch(0.145 0 0);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: #f0f0f0;
     line-height: 1.6;
     padding: 80px 10px 20px 10px;
-    cursor: url(cursor/point.png), default;
+    cursor: url(assets/cursor/point.png), default;
 }
 
 header {
@@ -88,7 +89,7 @@ header img {
 }
 
 #projects {
-    padding: 20px;
+    padding: 10px;
     background: rgba(13, 13, 13, 0.2);
 }
 
@@ -117,14 +118,14 @@ header img {
 .technologyBoard {
     width: 100%;
     overflow-x: auto;
-    padding: 20px;
+    padding: 15px;
     background-color: rgba(13, 13, 13, 0.1);
 }
 
 .Table {
     margin: 0 auto;
     border-collapse: separate;
-    border-spacing: 8px;
+    border-spacing: 7px;
 }
 
 .Table td {
@@ -165,7 +166,7 @@ header img {
 }
 
 #bottom {
-    padding: 30px 20px;
+    padding: 15px 20px;
     text-align: center;
     background-color: rgba(40, 40, 40, 0.95);
     border-top: 1px solid rgba(62, 11, 144, 0.4);
@@ -183,8 +184,8 @@ header img {
 
 #bottom p {
     color: aliceblue;
-    margin-top: 15px;
-    font-size: 1rem;
+    margin-top: 12px;
+    font-size: 0.8rem;
     opacity: 0.8;
 }
 
@@ -219,6 +220,6 @@ header img {
 
 @media (pointer: fine) {
     a, .technologies img, #projects a {
-        cursor: url(cursor/link.png), pointer;
+        cursor: url(assets/cursor/link.png), pointer;
     }
 }
