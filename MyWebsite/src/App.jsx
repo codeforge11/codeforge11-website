@@ -91,22 +91,23 @@ function App() {
                             {/* finished */}
 
                             <tr>
-                                <td><a href="https://www.python.org" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/python-auto.svg" /></a></td>
-                                <td><a href="https://isocpp.org" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/cpp.svg" /></a></td>
-                                <td><a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/cs.svg" /></a></td>
-                                <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/javascript.svg" /></a></td>
-                                <td><a href="https://www.archlinux.org" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/arch-auto.svg" /></a></td>
-                                <td><a href="https://www.debian.org" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/debian.svg" /></a></td>
-                                <td><a href="https://getfedora.org" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/fedora-auto.svg" /></a></td>
-                                <td><a href="https://ubuntu.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/ubuntu.svg" /></a></td>
-                                <td><a href="https://pop.system76.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/popos.svg"/></a></td>
-                                <td><a href="https://nodejs.org" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/nodejs-auto.svg"/></a></td>
-                                <td><a href="https://www.virtualbox.org/" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/virtualbox-auto.svg" /></a></td>
-                                <td><a href="https://www.proxmox.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/proxmox-auto.svg" /></a></td>
-                                <td><a href="https://stackoverflow.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/stackoverflow-auto.svg" /></a></td>
-                                <td><a href="https://www.cloudflare.com/" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/cloudflare-auto.svg" /></a></td>
-                                <td><a href="https://ollama.com/" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/ollama-auto.svg" /></a></td>
+                                <td><a href="https://www.python.org" target="_blank"><img src={mainIconFolder+"python.svg"} /></a></td>
+                                <td><a href="https://isocpp.org" target="_blank"><img src={mainIconFolder+"cpp.svg"}  /></a></td>
+                                <td><a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank"><img src={mainIconFolder+"cs.svg"}  /></a></td>
+                                <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src={mainIconFolder+"javascript.svg"} /></a></td>
+                                <td><a href="https://www.archlinux.org" target="_blank"><img src={mainIconFolder+"arch-auto.svg"} /></a></td>
+                                <td><a href="https://www.debian.org" target="_blank"><img src={mainIconFolder+"debian.svg"} /></a></td>
+                                <td><a href="https://getfedora.org" target="_blank"><img src={mainIconFolder+"fedora-auto.svg"}  /></a></td>
+                                <td><a href="https://ubuntu.com" target="_blank"><img src={mainIconFolder+"ubuntu.svg"}  /></a></td>
+                                <td><a href="https://pop.system76.com" target="_blank"><img src={mainIconFolder+"popos.svg"} /></a></td>
+                                <td><a href="https://nodejs.org" target="_blank"><img src={mainIconFolder+"nodejs-auto.svg"}/></a></td>
+                                <td><a href="https://www.virtualbox.org/" target="_blank"><img src={mainIconFolder+"virtualbox-auto.svg"} /></a></td>
+                                <td><a href="https://www.proxmox.com" target="_blank"><img src={mainIconFolder+"proxmox-auto.svg"}/></a></td>
+                                <td><a href="https://stackoverflow.com" target="_blank"><img src={mainIconFolder+"stackoverflow-auto.svg"}/></a></td>
+                                <td><a href="https://www.cloudflare.com/" target="_blank"><img src={mainIconFolder+"cloudflare-auto.svg"} /></a></td>
+                                <td><a href="https://ollama.com/" target="_blank"><img src={mainIconFolder+"ollama-auto.svg"} /></a></td>
                             </tr>
+                             {/* finished */}
 
                             <tr>
                                 <td><a href="https://react.dev" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/react-auto.svg" /></a></td>
