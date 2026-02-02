@@ -110,46 +110,46 @@ function App() {
                              {/* finished */}
 
                             <tr>
-                                <td><a href="https://react.dev" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/react-auto.svg" /></a></td>
+                                <td><a href="https://react.dev" target="_blank"><img src={mainIconFolder+"react-auto.svg"} /></a></td>
                                 <td class="empty"></td>
                                 <td class="empty"></td>
                                 <td class="empty"></td>
-                                <td><a href="https://endeavouros.com/" target="_blank"><img src="https://raw.githubusercontent.com/endeavouros-team/artwork-images-logo/b53c4b90276e77d530785cb60d33c6bc3cc02f45/icons/endeavour-logo-sans-logotype.svg" /></a></td>
-                                <td><a href="https://www.qt.io" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/qt-auto.svg" /></a></td>
-                                <td><a href="https://pesde.dev/" target="_blank"><img src="https://raw.githubusercontent.com/pesde-pkg/pesde/refs/heads/0.5/assets/logomark.svg"/></a></td>
-                                <td><a href="https://www.freebsd.org/" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/bsd-auto.svg" /></a></td>
-                                <td><a href="https://www.microsoft.com/windows" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/windows-auto.svg" /></a></td>
-                                <td><a href="https://unity.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/unity-auto.svg" /></a></td>
-                                <td><a href="https://www.putty.org" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/putty-auto.svg" /></a></td>
-                                <td><a href="https://www.raspberrypi.org" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/raspberrypi-auto.svg" /></a></td>
-                                <td><a href="https://git-scm.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/git-auto.svg" /></a></td>
-                                <td><a href="https://github.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/github-auto.svg" /></a></td>
-                                <td><a href="https://grafana.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/grafana-auto.svg" /></a></td>
+                                <td><a href="https://endeavouros.com/" target="_blank"><img src={mainIconFolder+"endeavour.svg"} /></a></td>
+                                <td><a href="https://www.qt.io" target="_blank"><img src={mainIconFolder+"qt-auto.svg"} /></a></td>
+                                <td><a href="https://pesde.dev/" target="_blank"><img src={mainIconFolder+"pesde.svg"}/></a></td>
+                                <td><a href="https://www.freebsd.org/" target="_blank"><img src={mainIconFolder+"bsd-auto.svg"} /></a></td>
+                                <td><a href="https://www.microsoft.com/windows" target="_blank"><img src={mainIconFolder+"windows-auto.svg"} /></a></td>
+                                <td><a href="https://unity.com" target="_blank"><img src={mainIconFolder+"unity-auto.svg"} /></a></td>
+                                <td><a href="https://www.putty.org" target="_blank"><img src={mainIconFolder+"putty-auto.svg"} /></a></td>
+                                <td><a href="https://www.raspberrypi.org" target="_blank"><img src={mainIconFolder+"raspberrypi-auto.svg"} /></a></td>
+                                <td><a href="https://git-scm.com" target="_blank"><img src={mainIconFolder+"git-auto.svg"} /></a></td>
+                                <td><a href="https://github.com" target="_blank"><img src={mainIconFolder+"github-auto.svg"} /></a></td>
+                                <td><a href="https://grafana.com" target="_blank"><img src={mainIconFolder+"grafana-auto.svg"} /></a></td>
                             </tr>
 
                             <tr>
-                                <td ><a href="https://www.apachefriends.org/index.html" target="_blank"><img src="	https://www.apachefriends.org/images/xampp-logo-ac950edf.svg" /></a></td>
-                                <td ><a href="https://cockpit-project.org/" target="_blank"><img src="https://raw.githubusercontent.com/cockpit-project/cockpit/3ef5485d4aaf9baa3051f4ceececdfcc1f339940/src/branding/default/logo.svg" /></a></td>
+                                <td ><a href="https://www.apachefriends.org/index.html" target="_blank"><img src={mainIconFolder+"xampp.svg"} /></a></td>
+                                <td ><a href="https://cockpit-project.org/" target="_blank"><img src={mainIconFolder+"cockpit.svg"} /></a></td>
                                 <td class="empty"></td>
                                 <td class="empty"></td>
-                                <td><a href="https://gin-gonic.com/" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/gin-auto.svg" /></a></td>
+                                <td><a href="https://gin-gonic.com/" target="_blank"><img src={mainIconFolder+"gin-auto.svg"} /></a></td>
                                 <td class="empty"></td>
-                                <td><a href="https://www.npmjs.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/npm-auto.svg" /></a></td>
+                                <td><a href="https://www.npmjs.com" target="_blank"><img src={mainIconFolder+"npm-auto.svg"} /></a></td>
                                 <td class="empty"></td>
                                 <td class="empty"></td>               
-                                <td><a href="https://podman.io/" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/podman-auto.svg" /></a></td>
-                                <td><a href="https://www.docker.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/docker.svg" /></a></td>
+                                <td><a href="https://podman.io/" target="_blank"><img src={mainIconFolder+"podman-auto.svg"} /></a></td>
+                                <td><a href="https://www.docker.com" target="_blank"><img src={mainIconFolder+"docker.svg"} /></a></td>
                                 <td class="empty"></td>
-                                <td><a href="https://www.sqlite.org/" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/sqlite.svg" /></a></td>
-                                <td><a href="https://www.deepseek.com/" target="_blank"><img src="https://www.deepseek.com/favicon.ico" /></a></td>
-                                <td><a href="https://claude.ai/" target="_blank"><img src="https://claude.ai/favicon.ico" /></a></td>
+                                <td><a href="https://www.sqlite.org/" target="_blank"><img src={mainIconFolder+"sqlite.svg"} /></a></td>
+                                <td><a href="https://www.deepseek.com/" target="_blank"><img src={mainIconFolder+"deepseek.ico"} /></a></td>
+                                <td><a href="https://claude.ai/" target="_blank"><img src={mainIconFolder+"claude.ico"} /></a></td>
                             </tr>
 
                             <tr>
-                                <td ><a href="https://github.com/gtsteffaniak/filebrowser" target="_blank"><img src="https://raw.githubusercontent.com/gtsteffaniak/filebrowser/18738b327313acf6cc76dc41acd4a363928360d1/frontend/public/img/icons/logo.svg" /></a></td>
-                                <td ><a href="https://www.openmediavault.org/" target="_blank"><img src="https://www.openmediavault.org/favicon.svg" /></a></td>
-                                <td><a href="https://filerise.net/" target="_blank"><img src="https://filerise.net/assets/logo.svg" /></a></td>
-                                <td><a href="https://homarr.dev/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/homarr.svg" /></a></td>
+                                <td ><a href="https://github.com/gtsteffaniak/filebrowser" target="_blank"><img src={mainIconFolder+"filebrowser.svg"} /></a></td>
+                                <td ><a href="https://www.openmediavault.org/" target="_blank"><img src={mainIconFolder+"openmediavault.svg"} /></a></td>
+                                <td><a href="https://filerise.net/" target="_blank"><img src={mainIconFolder+"filerise.svg"} /></a></td>
+                                <td><a href="https://homarr.dev/" target="_blank"><img src={mainIconFolder+"homarr.svg"} /></a></td>
                                 <td class="empty"></td>
                                 <td class="empty"></td>
                                 <td class="empty"></td>
@@ -158,9 +158,9 @@ function App() {
                                 <td class="empty"></td>               
                                 <td class="empty"></td>
                                 <td class="empty"></td>
-                                <td><a href="https://mariadb.org" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/mariadb-auto.svg" /></a></td>
-                                <td><a href="https://www.mysql.com" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/mysql-auto.svg" /></a></td>
-                                <td ><a href="https://gemini.google.com/" target="_blank"><img src="https://www.gstatic.com/lamda/images/gemini_sparkle_aurora_33f86dc0c0257da337c63.svg" /></a></td>
+                                <td><a href="https://mariadb.org" target="_blank"><img src={mainIconFolder+"mariadb-auto.svg"} /></a></td>
+                                <td><a href="https://www.mysql.com" target="_blank"><img src={mainIconFolder+"mysql-auto.svg"} /></a></td>
+                                <td ><a href="https://gemini.google.com/" target="_blank"><img src={mainIconFolder+"gemini.svg"} /></a></td>
 
                             </tr>
 
