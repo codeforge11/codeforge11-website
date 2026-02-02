@@ -50,7 +50,6 @@ function App() {
                                 <td class="empty"></td>
                                 <td><a href="https://www.jetbrains.com/go/" target="_blank"><img src={mainIconFolder+"goland.svg"}  /></a></td>
                             </tr> 
-                            {/* finished */}
 
                             <tr>
                                 <td><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"><img src={mainIconFolder+"html.svg"}  /></a></td>
@@ -69,7 +68,6 @@ function App() {
                                 <td><a href="https://www.jetbrains.com/datagrip/" target="_blank"><img src={mainIconFolder+"datagrip.svg"}  /></a></td>
                                 <td><a href="https://www.jetbrains.com/dataspell/" target="_blank"><img src={mainIconFolder+"dataspell.svg"}  /></a></td>
                             </tr>
-                              {/* finished */}
 
                             <tr>
                                 <td><a href="https://www.php.net" target="_blank"><img src={mainIconFolder+"php.svg"} /></a></td>
@@ -88,7 +86,6 @@ function App() {
                                 <td><a href="https://code.visualstudio.com" target="_blank"><img src={mainIconFolder+"vscode.svg"} /></a></td>
                                 <td><a href="https://visualstudio.microsoft.com" target="_blank"><img src={mainIconFolder+"vs.svg"} /></a></td>
                             </tr>
-                            {/* finished */}
 
                             <tr>
                                 <td><a href="https://www.python.org" target="_blank"><img src={mainIconFolder+"python.svg"} /></a></td>
@@ -107,7 +104,6 @@ function App() {
                                 <td><a href="https://www.cloudflare.com/" target="_blank"><img src={mainIconFolder+"cloudflare-auto.svg"} /></a></td>
                                 <td><a href="https://ollama.com/" target="_blank"><img src={mainIconFolder+"ollama-auto.svg"} /></a></td>
                             </tr>
-                             {/* finished */}
 
                             <tr>
                                 <td><a href="https://react.dev" target="_blank"><img src={mainIconFolder+"react-auto.svg"} /></a></td>
