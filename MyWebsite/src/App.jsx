@@ -4,9 +4,9 @@ import './index.css';
 
 function App() {
 
-    return (
+  return (
     <>
-        <BackgroundEffect />
+      <BackgroundEffect />
         
       <header>
           <div class="mx-auto flex h-full max-w-content w-full" >
