@@ -3,6 +3,7 @@ import Technologies from './assets/scripts/Technologies';
 import LTechnologies from './assets/scripts/LTechnologies';
 import AboutMe from './assets/scripts/AboutMe';
 import './index.css';
+import './techCard.css';
 
 function App() {
   return (
