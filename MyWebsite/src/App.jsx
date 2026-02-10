@@ -1,5 +1,7 @@
 import BackgroundEffect from './assets/scripts/BackgroundEffect';
 import Technologies from './assets/scripts/Technologies';
+import LTechnologies from './assets/scripts/LTechnologies';
+import AboutMe from './assets/scripts/AboutMe';
 import './index.css';
 
 function App() {
@@ -15,11 +17,7 @@ function App() {
       </header>
     
       <div class="container">
-        <h1> Hello! I'm codeforge11</h1>
-          <div class="text">
-            <p>I specialize in Go/Golang.</p>
-            <p>I create efficient software solutions with clean code. Check out my projects and skills in software engineering.</p>
-          </div>
+          <AboutMe/>
 
           <h2>My projects:</h2>
           <div id="projects">
@@ -28,7 +26,10 @@ function App() {
               <p>&#9679; <a href="https://github.com/codeforge11/TFT-DesktopClock">TFT-DesktopClock</a> - Simple digital desk clock built with Arduino and a TFT display using appropriate libraries.</p>
           </div>
 
-          <h2>Technologies I've used:</h2>
+          <h2>Technologies I love:</h2>
+          <LTechnologies/>
+
+          <h3>Technologies I've used:</h3>
             <Technologies/>
 
             <div id="bottom">
