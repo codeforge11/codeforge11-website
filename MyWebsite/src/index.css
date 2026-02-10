@@ -82,12 +82,19 @@ header img {
 
 .container h2 {
     padding: 20px;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.container h3 {
+    padding: 20px;
     font-size: 1.5rem;
     background: rgba(0, 0, 0, 0.1);
 }
 
 #projects {
-    padding: 20px;
+    padding: 10px;
     background: rgba(13, 13, 13, 0.2);
 }
 
