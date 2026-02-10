@@ -3,7 +3,6 @@ import Technologies from './assets/scripts/Technologies';
 import './index.css';
 
 function App() {
-
   return (
     <>
       <BackgroundEffect />
