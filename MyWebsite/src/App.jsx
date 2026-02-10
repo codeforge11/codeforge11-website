@@ -8,8 +8,6 @@ function App() {
     <>
         <BackgroundEffect />
         
-        
-
       <header>
           <div class="mx-auto flex h-full max-w-content w-full" >
               <a href="/"><img src="src/assets/img/logomark.svg" alt="logomark" height="90" /></a>
@@ -40,7 +38,7 @@ function App() {
                     <a href="https://stackoverflow.com/users/27400639" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/stackoverflow/stackoverflow-original.svg" width="64" height="64" /></a>
                     <a href="https://github.com/codeforge11" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/github-auto.svg" width="64" height="64" /></a>
                 </div>
-                <p>Made with ❤️ by ©codeforge11 2026</p>
+                <p>Made with ☕ by ©codeforge11 2026</p>
             </div>
           
       </div>
