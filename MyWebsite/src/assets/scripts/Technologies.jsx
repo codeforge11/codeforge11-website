@@ -53,7 +53,7 @@ const Technologies = () => {
                         <td class="empty"></td>
                         <td class="empty"></td>
                         <td class="empty"></td>
-                        <td><a href="https://www.torproject.org/" target="_blank"><img src={mainIconFolder+"tor.svg"} /></a></td>
+                        <td><a href="https://neovim.io/" target="_blank"><img src={mainIconFolder+"nvim.ico"} /></a></td>
                         <td><a href="https://www.gimp.org/" target="_blank"><img src={mainIconFolder+"gimp.svg"} /></a></td>
                         <td><a href="https://www.figma.com" target="_blank"><img src={mainIconFolder+"figma.svg"} /></a></td>
                         <td><a href="https://developer.android.com/studio" target="_blank"><img src={mainIconFolder+"androidstudio.svg"} /></a></td>
@@ -81,7 +81,7 @@ const Technologies = () => {
 
                     <tr>
                         <td><a href="https://react.dev" target="_blank"><img src={mainIconFolder+"react-auto.svg"} /></a></td>
-                        <td class="empty"></td>
+                        <td><a href="https://www.torproject.org/" target="_blank"><img src={mainIconFolder+"tor.svg"} /></a></td>
                         <td class="empty"></td>
                         <td class="empty"></td>
                         <td><a href="https://endeavouros.com/" target="_blank"><img src={mainIconFolder+"endeavour.svg"} /></a></td>
@@ -120,7 +120,7 @@ const Technologies = () => {
                         <td ><a href="https://www.openmediavault.org/" target="_blank"><img src={mainIconFolder+"openmediavault.svg"} /></a></td>
                         <td><a href="https://filerise.net/" target="_blank"><img src={mainIconFolder+"filerise.svg"} /></a></td>
                         <td><a href="https://homarr.dev/" target="_blank"><img src={mainIconFolder+"homarr.svg"} /></a></td>
-                        <td class="empty"></td>
+                        <td><a href="https://obsidian.md/" target="_blank"><img src={mainIconFolder+"obsidian.svg"} /></a></td>
                         <td class="empty"></td>
                         <td class="empty"></td>
                         <td class="empty"></td>
