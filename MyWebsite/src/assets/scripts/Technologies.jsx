@@ -53,10 +53,10 @@ const Technologies = () => {
                         <td class="empty"></td>
                         <td class="empty"></td>
                         <td class="empty"></td>
-                        <td><a href="https://neovim.io/" target="_blank"><img src={mainIconFolder+"nvim.ico"} /></a></td>
                         <td><a href="https://www.gimp.org/" target="_blank"><img src={mainIconFolder+"gimp.svg"} /></a></td>
                         <td><a href="https://www.figma.com" target="_blank"><img src={mainIconFolder+"figma.svg"} /></a></td>
                         <td><a href="https://developer.android.com/studio" target="_blank"><img src={mainIconFolder+"androidstudio.svg"} /></a></td>
+                        <td><a href="https://neovim.io/" target="_blank"><img src={mainIconFolder+"nvim.ico"} /></a></td>
                         <td><a href="https://code.visualstudio.com" target="_blank"><img src={mainIconFolder+"vscode.svg"} /></a></td>
                         <td><a href="https://visualstudio.microsoft.com" target="_blank"><img src={mainIconFolder+"vs.svg"} /></a></td>
                     </tr>
@@ -82,7 +82,7 @@ const Technologies = () => {
                     <tr>
                         <td><a href="https://react.dev" target="_blank"><img src={mainIconFolder+"react-auto.svg"} /></a></td>
                         <td><a href="https://www.torproject.org/" target="_blank"><img src={mainIconFolder+"tor.svg"} /></a></td>
-                        <td class="empty"></td>
+                        <td><a href="https://zen-browser.app/" target="_blank"><img src={mainIconFolder+"zen.svg"} /></a></td>
                         <td class="empty"></td>
                         <td><a href="https://endeavouros.com/" target="_blank"><img src={mainIconFolder+"endeavour.svg"} /></a></td>
                         <td><a href="https://www.qt.io" target="_blank"><img src={mainIconFolder+"qt-auto.svg"} /></a></td>
