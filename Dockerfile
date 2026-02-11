@@ -1,11 +1,11 @@
-FROM node:20-alpine AS build
+FROM node:20-fedora AS build
 WORKDIR /app
 COPY MyWebsite/package*.json ./
 RUN npm install
 COPY MyWebsite/ ./
 RUN npm run build
 
-FROM nginx:stable-alpine
+FROM nginx:stable-fedora
 
 #Clear
 RUN rm -rf /usr/share/nginx/html/*
