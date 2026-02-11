@@ -1,11 +1,11 @@
-FROM node:20-fedora AS build
+FROM node:latest AS build
 WORKDIR /app
 COPY MyWebsite/package*.json ./
 RUN npm install
 COPY MyWebsite/ ./
 RUN npm run build
 
-FROM nginx:stable-fedora
+FROM nginx:latest
 
 #Clear
 RUN rm -rf /usr/share/nginx/html/*
