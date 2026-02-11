@@ -1,0 +1,50 @@
+.MyFavoriteTech {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 1.25rem;
+    padding: 2%;
+    background: rgba(13, 13, 13, 0.3);
+}
+
+.techCard, 
+#goCard,
+#dockerCard,
+#nvimCard,
+#ginCard,
+#qtCard {
+    padding: 1.5rem; 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.6rem;
+    backdrop-filter: blur(5px);
+    transition: border-color 0.3s ease;
+    cursor: url(assets/cursor/link.png), pointer;
+}
+
+.techCard:hover {
+    border-color: rgba(100, 200, 200, 0.6);
+}
+
+.iconCard {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.titleCard {
+    font-size: 1.25rem !important;
+    background: none !important;
+    padding: 0 !important;
+    margin-bottom: 0.6rem;
+    color: #fff;
+}
+
+.descCard {
+    font-size: 0.9rem;
+    color: #ccc;
+    line-height: 1.4;
+}
+
+#goCard { background: linear-gradient(135deg, rgba(0, 173, 216, 0.1), rgba(0, 125, 156, 0.2)); }
+#dockerCard { background: linear-gradient(135deg, rgba(36, 150, 237, 0.1), rgba(13, 77, 161, 0.2)); }
+#nvimCard { background: linear-gradient(135deg, rgba(49, 120, 198, 0.1), rgba(35, 89, 150, 0.2)); }
+#ginCard { background: linear-gradient(135deg, rgba(97, 218, 251, 0.1), rgba(34, 116, 138, 0.2)); }
+#qtCard { background: linear-gradient(135deg, rgba(0, 151, 156, 0.1), rgba(0, 95, 99, 0.2)); }
