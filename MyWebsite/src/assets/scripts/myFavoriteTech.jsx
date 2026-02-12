@@ -7,23 +7,22 @@ const myFavoriteTech = [
     },
     { 
         name: "Docker", 
-        description: "This is a tool that allows me to run multiple services on my server without having to worry about dependencies.", 
+        description: "A tool that allows me to run multiple services on my server without having to worry about dependency issues.", 
         icon: "🐳", 
         type: "dockerCard"
     },
     { 
         name: "Gin", 
-        description: "It's important to have a trusted framework for creating websites.", 
+        description: "My favorite framework for creating reliable and efficient web services.", 
         icon: "🍸", 
         type: "ginCard"
     },
     { 
-        name: "QT", 
-        description: "QT wins my heart because of its simplicity and cross-platform support.", 
+        name: "Qt", 
+        description: "Qt wins my heart because of its simplicity and excellent cross-platform support.", 
         icon: "🎀", 
         type: "qtCard"
     },
-
 ];
 
 export default myFavoriteTech;
