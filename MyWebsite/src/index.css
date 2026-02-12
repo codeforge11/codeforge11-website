@@ -16,7 +16,7 @@ body {
     background-attachment: fixed;
     color: #f0f0f0;
     line-height: 1.6;
-    padding: 80px 10px 20px 10px;
+    padding: 5rem 0.625rem 1.25rem 0.625rem;
     cursor: url(assets/cursor/point.png), default;
 }
 
@@ -50,10 +50,10 @@ header img {
 
 .container {
     width: 100%;   
-    max-width: 1100px; 
+    max-width: 68.75rem; 
     background: rgba(30, 30, 30, 0.85);
-    backdrop-filter: blur(10px);
-    border-radius: 25px;
+    backdrop-filter: blur(0.625rem);
+    border-radius: 1.5625rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@ header img {
 }
 
 .container h1 {
-    padding: 40px 20px 10px 20px;
+    padding: 2.5rem 1.25rem 0.625rem 1.25rem;
     font-size: clamp(1.8rem, 5vw, 3.5rem);
     text-align: center;
     font-weight: bold;
@@ -69,36 +69,36 @@ header img {
 }
 
 .text {
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 .text p {
     font-size: clamp(1rem, 2vw, 1.2rem);
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     text-align: center;
     font-weight: bold;
 }
 
 .container h2 {
-    padding: 20px;
-    padding-bottom: 5px;
+    padding: 1.25rem;
+    padding-bottom: 0.3125rem;
     font-size: 1.5rem;
     background: rgba(0, 0, 0, 0.1);
 }
 
 .container h3 {
-    padding: 20px;
+    padding: 1.25rem;
     font-size: 1.5rem;
     background: rgba(0, 0, 0, 0.1);
 }
 
 #projects {
-    padding: 10px;
+    padding: 0.625rem;
     background: rgba(13, 13, 13, 0.2);
 }
 
 #projects p {
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
     font-size: 1.1rem;
     font-weight: normal;
 }
@@ -109,37 +109,37 @@ header img {
     text-decoration: none;
     background: linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
                 linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
-    background-size: 100% 3px, 0 3px;
+    background-size: 100% 0.1875rem, 0 0.1875rem;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
     transition: background-size 400ms;
 }
 
 #projects a:hover {
-    background-size: 0 3px, 100% 3px;
+    background-size: 0 0.1875rem, 100% 0.1875rem;
 }
 
 .technologyBoard {
     width: 100%;
     overflow-x: auto;
-    padding: 15px;
+    padding: 0.9375rem;
     background-color: rgba(13, 13, 13, 0.1);
 }
 
 .Table {
     margin: 0 auto;
     border-collapse: separate;
-    border-spacing: 7px;
+    border-spacing: 0.4375rem;
 }
 
 .Table td {
-    width: 55px;
-    height: 55px;
+    width: 3.4375rem;
+    height: 3.4375rem;
     background: rgba(30, 40, 70, 0.85);
-    border-radius: 10px;
+    border-radius: 0.625rem;
     transition: all 0.3s ease;
     position: relative;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.3);
 }
 
 .Table td.empty {
@@ -150,7 +150,7 @@ header img {
     transform: scale(1.1) rotate(3deg);
     z-index: 10;
     background: rgba(52, 152, 219, 0.9);
-    box-shadow: 0 10px 20px rgba(52, 152, 219, 0.4);
+    box-shadow: 0 0.625rem 1.25rem rgba(52, 152, 219, 0.4);
 }
 
 .Table td a {
@@ -166,11 +166,11 @@ header img {
     height: 80%;
     width: 80%;
     object-fit: contain;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0 0.125rem 0.25rem rgba(0, 0, 0, 0.5));
 }
 
 #bottom {
-    padding: 15px 20px;
+    padding: 0.9375rem 1.25rem;
     text-align: center;
     background-color: rgba(40, 40, 40, 0.95);
     border-top: 1px solid rgba(62, 11, 144, 0.4);
@@ -178,40 +178,40 @@ header img {
 }
 
 #bottom img {
-    margin: 0 12px;
+    margin: 0 0.75rem;
     transition: transform 0.2s ease;
 }
 
 #bottom img:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.3125rem);
 }
 
 #bottom p {
     color: aliceblue;
-    margin-top: 12px;
+    margin-top: 0.75rem;
     font-size: 0.8rem;
     opacity: 0.8;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
     .Table td.empty {
         display: table-cell;
         visibility: hidden;
     }
     
     .Table td {
-        width: 60px;
-        height: 60px;
+        width: 3.75rem;
+        height: 3.75rem;
     }
 
     .container h1 {
         text-align: left;
-        padding-left: 40px;
+        padding-left: 2.5rem;
     }
 
     .text p {
         text-align: left;
-        padding-left: 20px;
+        padding-left: 1.25rem;
     }
 }
 
