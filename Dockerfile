@@ -12,8 +12,8 @@ RUN rm -rf /usr/share/nginx/html/*
 
 COPY --from=build /app/dist /usr/share/nginx/html
 
-#Copy server files
-COPY --from=build /app/src/assets/ /usr/share/nginx/html/assets/
+RUN mkdir -p /usr/share/nginx/html/src
+COPY --from=build /app/src/assets /usr/share/nginx/html/src/assets/
 
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
