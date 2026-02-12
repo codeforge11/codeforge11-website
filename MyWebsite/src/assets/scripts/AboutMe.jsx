@@ -1,7 +1,7 @@
 const AboutMe = () => {
     return(<>
         <h1> 
-            Hello! I'm 
+            <span>Hello! I'm </span>
             <span style={{color:'lightSkyBlue'}}> codeforge11</span>
         </h1>
           <div class="text">
