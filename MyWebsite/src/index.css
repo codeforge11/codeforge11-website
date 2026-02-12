@@ -124,6 +124,7 @@ header img {
     overflow-x: auto;
     padding: 0.9375rem;
     background-color: rgba(13, 13, 13, 0.1);
+    -webkit-overflow-scrolling: touch; 
 }
 
 .Table {
@@ -234,5 +235,40 @@ header img {
 @media (pointer: fine) {
     a, .technologies img, #projects a {
         cursor: url(assets/cursor/link.png), pointer;
+    }
+}
+
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Table, 
+    .Table tbody {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        border-spacing: 0;
+    }
+
+    .Table tr {
+        display: contents; 
+    }
+
+    .Table td {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3.5rem;
+        height: 3.5rem;
+        margin: 0.25rem;
+        
+        min-width: 3.5rem; 
+    }
+    .Table td.empty {
+        display: none !important;
     }
 }
