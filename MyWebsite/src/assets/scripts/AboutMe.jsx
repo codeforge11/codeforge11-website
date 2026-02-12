@@ -1,6 +1,9 @@
 const AboutMe = () => {
     return(<>
-        <h1> Hello! I'm codeforge11</h1>
+        <h1> 
+            Hello! I'm 
+            <span style={{color:'lightSkyBlue'}}> codeforge11</span>
+        </h1>
           <div class="text">
             <h3>About me:</h3>
             <p>I am a new programmer entering the world of programming, ready to learn new technologies.</p>
