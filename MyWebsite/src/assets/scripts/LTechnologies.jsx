@@ -14,7 +14,7 @@ const LTechnologies = () => {
                 whileHover={{ scale: 1.05, y: -5 }}
                 id={`${tech.type}`}>
 
-                <div className="iconCard">{tech.icon}</div>
+                <div className="iconCard"><img src={tech.iconSRC}/></div>
                 <h3 className="titleCard">{tech.name}</h3>
                 <p className="descCard">{tech.description}</p>
             </motion.div>

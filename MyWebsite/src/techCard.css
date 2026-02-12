@@ -29,6 +29,13 @@
     margin-bottom: 0.8rem;
 }
 
+.iconCard img{
+    width: 100%;
+    height: auto;
+    max-width: 2.5rem;
+    display: block;
+}
+
 .titleCard {
     font-size: 1.25rem !important;
     background: none !important;
