@@ -74,7 +74,7 @@ header img {
 
 .text p {
     font-size: clamp(1rem, 2vw, 1.2rem);
-    margin-bottom: 0.625rem;
+    /* margin-bottom: 0.625rem; */
     text-align: center;
     font-weight: bold;
 }
@@ -86,7 +86,7 @@ header img {
     background: rgba(0, 0, 0, 0.1);
 }
 
-.container h3 {
+.container #thH3 {
     padding: 1.25rem;
     font-size: 1.5rem;
     background: rgba(0, 0, 0, 0.1);
