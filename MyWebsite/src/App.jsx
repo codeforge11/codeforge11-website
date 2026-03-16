@@ -2,6 +2,8 @@ import BackgroundEffect from './assets/scripts/BackgroundEffect';
 import Technologies from './assets/scripts/Technologies';
 import LTechnologies from './assets/scripts/LTechnologies';
 import AboutMe from './assets/scripts/AboutMe';
+import MyProjects from './assets/scripts/myProjects';
+
 import './index.css';
 import './techCard.css';
 
@@ -21,11 +23,7 @@ function App() {
           <AboutMe/>
 
           <h2>My projects:</h2>
-          <div id="projects">
-              <p>&#9679; <a href="https://github.com/codeforge11/SQLMason">SQLMason</a> - Simple and easy-to-use database management tool.</p>
-              <p>&#9679; <a href="https://github.com/codeforge11/CactuDash">CactuDash</a> - Minimalistic and highly optimized dashboard for efficient server management, including Docker and Docker Compose. </p>
-              <p>&#9679; <a href="https://github.com/codeforge11/TFT-DesktopClock">TFT-DesktopClock</a> - Simple digital desk clock built with Arduino and a TFT display using appropriate libraries.</p>
-          </div>
+            <MyProjects/>
 
           <h2>Technologies I love:</h2>
           <LTechnologies/>
