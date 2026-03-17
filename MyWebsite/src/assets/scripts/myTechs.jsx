@@ -37,7 +37,6 @@ const myTechnologies = [
   { src: "https://zen-browser.app/", file: "zen.svg" },
   { src: "https://endeavouros.com/", file: "endeavour.svg" },
   { src: "https://www.qt.io", file: "qt-auto.svg" },
-  { src: "https://pesde.dev/", file: "pesde.svg" },
   { src: "https://www.freebsd.org/", file: "bsd-auto.svg" },
   { src: "https://www.microsoft.com/windows", file: "windows-auto.svg" },
   { src: "https://www.putty.org", file: "putty-auto.svg" },
