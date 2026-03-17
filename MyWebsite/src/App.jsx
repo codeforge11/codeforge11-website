@@ -29,7 +29,7 @@ function App() {
           <h2>Technologies I love:</h2>
           <LTechnologies/>
 
-          <h3 id='thH3'>Technologies I've used:</h3>
+          <h2>Technologies I've used:</h2>
             <Technologies/>
 
             <div id="bottom">
