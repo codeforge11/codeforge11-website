@@ -1,0 +1,68 @@
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.technologies {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.technologiesContainer {
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.technologiesScroll {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: scroll 200s linear infinite;
+}
+
+.technologiesScroll:hover {
+  animation-play-state: paused;
+}
+
+.techCard {
+  flex-shrink: 0;
+  background-color: rgba(31, 41, 55, 0.4);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(55, 65, 81, 0.8);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.techCard:hover {
+  border-color: #22d3ee;
+  transform: translateY(-4px) scale(1.05);
+  background-color: rgba(31, 41, 55, 0.7);
+  box-shadow: 0 10px 20px -5px rgba(34, 211, 238, 0.3);
+}
+
+.iconBox {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.techIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
+.techCard:hover {
+  color: #ffffff;
+}
