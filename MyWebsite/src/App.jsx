@@ -3,10 +3,12 @@ import Technologies from './assets/scripts/Technologies';
 import LTechnologies from './assets/scripts/LTechnologies';
 import AboutMe from './assets/scripts/AboutMe';
 import MyProjects from './assets/scripts/myProjects';
+import Certificates from './assets/scripts/certificates';
 
 import './assets/styles/index.css';
 import './assets/styles/techCard.css';
 import './assets/styles/technologies.css';
+import './assets/styles/projects.css'
 
 function App() {
   return (
@@ -31,6 +33,9 @@ function App() {
 
           <h2>Technologies I've used:</h2>
             <Technologies/>
+
+          <h2>My certificates:</h2>
+            <Certificates/>
 
             <div id="bottom">
                 <div>
