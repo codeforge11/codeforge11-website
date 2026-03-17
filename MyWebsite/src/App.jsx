@@ -4,9 +4,9 @@ import LTechnologies from './assets/scripts/LTechnologies';
 import AboutMe from './assets/scripts/AboutMe';
 import MyProjects from './assets/scripts/myProjects';
 
-import './assets/styles/main.css';
+import './assets/styles/index.css';
 import './assets/styles/techCard.css';
-import './assets/styles/technologies.css'
+import './assets/styles/technologies.css';
 
 function App() {
   return (
