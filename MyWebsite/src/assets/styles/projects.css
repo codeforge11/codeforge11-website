@@ -1,0 +1,29 @@
+.projectBox{
+    border-radius: 1rem;
+    align-items: center;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    padding-left: 0.6rem;
+
+    border: 1px solid #ffffff25;
+
+    cursor: url(assets/cursor/link.png), pointer;
+}
+
+.projectBox img{
+    width: 10%;
+    height: 10%;
+    
+}
+
+.projectCenter h1, 
+.projectCenter p{
+    padding-top: 0%;
+    padding-left: 3%;
+}
+
+.projectCenter h1{
+    font-size:large;
+}
