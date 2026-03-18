@@ -1,9 +1,21 @@
 import { motion } from 'framer-motion';
 
 const projects = [
-    {name:"SQLMason" ,desc:"Simple and easy-to-use database management tool.",iconLink:"", src:"https://github.com/codeforge11/SQLMason", techs:"GO QT"},
-    {name:"CactuDash" ,desc:"Minimalistic and highly optimized dashboard for efficient server management, including Docker and Docker Compose. ",iconLink:"", src:"https://github.com/codeforge11/CactuDash", techs:"GO GIN JS"},
-    {name:"TFT-DesktopClock" ,desc:"Simple digital desk clock built with Arduino and a TFT display using appropriate libraries.",iconLink:"", src:"https://github.com/codeforge11/TFT-DesktopClock", techs:"ARDUINO CPP"},
+    {name:"SQLMason" ,
+        desc:"Simple and easy-to-use database management tool.",
+        iconLink:"", 
+        src:"https://github.com/codeforge11/SQLMason", 
+        techs:"GO QT"},
+    {name:"CactuDash" ,
+        desc:"Minimalistic and highly optimized dashboard for efficient server management, including Docker and Docker Compose. ",
+        iconLink:"", 
+        src:"https://github.com/codeforge11/CactuDash", 
+        techs:"GO GIN JS"},
+    {name:"TFT-DesktopClock" ,
+        desc:"Simple digital desk clock built with Arduino and a TFT display using appropriate libraries.",
+        iconLink:"", 
+        src:"https://github.com/codeforge11/TFT-DesktopClock", 
+        techs:"ARDUINO CPP"},
 ]
 
 const myProject = ()=>{
