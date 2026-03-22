@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 const projects = [
     {name:"SQLMason" ,
         desc:"Simple and easy-to-use database management tool.",
-        iconLink:"", 
+        iconLink:"https://raw.githubusercontent.com/codeforge11/SQLMason/refs/heads/main/src/public/logomark.png", 
         src:"https://github.com/codeforge11/SQLMason", 
         techs:"GO QT"},
     {name:"CactuDash" ,
         desc:"Minimalistic and highly optimized dashboard for efficient server management, including Docker and Docker Compose. ",
-        iconLink:"", 
+        iconLink:"https://raw.githubusercontent.com/codeforge11/CactuDash/master/server/static/img/logomark.svg", 
         src:"https://github.com/codeforge11/CactuDash", 
         techs:"GO GIN JS"},
     {name:"TFT-DesktopClock" ,
@@ -18,8 +18,8 @@ const projects = [
         techs:"ARDUINO CPP"},
 ]
 
-const myProject = ()=>{
-    return(<>
+const myProject = () => {
+    return ( <>
             {projects.map((x) => (
                 <motion.div
                     key={x.name}
@@ -33,10 +33,14 @@ const myProject = ()=>{
                         <div class="projectCenter">
                             <h1>{x.name}</h1>                          
                             <p>{x.desc}</p>
-                            <p  style={{color:'lightSkyBlue'}}>{x.techs}</p>
+                            <p style={{color:'lightSkyBlue'}}>{x.techs}</p>
+                        </div>
+
+                        {x.iconLink !== "" && (
+                            <img src={x.iconLink} alt={x.name}/>
+                        )}
                     </div>
-                </div>
-            </motion.div>
+                </motion.div>
             ))}
         </>
     );
