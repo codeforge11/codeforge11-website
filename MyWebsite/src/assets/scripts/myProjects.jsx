@@ -21,17 +21,16 @@ const projects = [
 const myProject = ()=>{
     return(<>
             {projects.map((x) => (
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                viewport={{ once: true }}
-                whileInView={{ opacity: 1, y: 0 }}
-                whileHover={{ scale: 1.01, y: -5 }}
-            >
-
-                <div class="projectBox" style={{ display: "flex" }} onClick={() => window.open(x.src, "_blank")}>
-                    <img src={x.iconLink}/>
-
-                    <div class="projectCenter">
+                <motion.div
+                    key={x.name}
+                    initial={{ opacity: 0, y: 20 }}
+                    viewport={{ once: true }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    whileHover={{ scale: 1.01, y: -5 }}
+                >
+                    <div class="projectBox" style={{ display: "flex" }} onClick={() => window.open(x.src, "_blank")}>
+        
+                        <div class="projectCenter">
                             <h1>{x.name}</h1>                          
                             <p>{x.desc}</p>
                             <p  style={{color:'lightSkyBlue'}}>{x.techs}</p>
