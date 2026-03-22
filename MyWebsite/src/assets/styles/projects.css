@@ -1,29 +1,40 @@
-.projectBox{
+.projectBox {
     border-radius: 1rem;
-    align-items: center;
-
-    margin-left: 1rem;
-    margin-right: 1rem;
-
-    padding-left: 0.6rem;
-
     border: 1px solid #ffffff25;
-
+    margin-top: 2rem;
+    padding: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
     cursor: url(assets/cursor/link.png), pointer;
+    transition: background 0.3s ease;
 }
 
-.projectBox img{
-    width: 10%;
-    height: 10%;
-    
+.projectBox:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.projectCenter {
+    flex: 1;
 }
 
 .projectCenter h1, 
-.projectCenter p{
-    padding-top: 0%;
-    padding-left: 3%;
+.projectCenter p {
+    padding: 0; 
+    margin: 0;
 }
 
-.projectCenter h1{
-    font-size:large;
+.projectCenter h1 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.projectBox img {
+    width: 60px;
+    height: auto;
+    margin-left: 1.5rem;
+    object-fit: contain;
 }
