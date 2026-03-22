@@ -1,6 +1,6 @@
 import BackgroundEffect from './assets/scripts/BackgroundEffect';
 import Technologies from './assets/scripts/Technologies';
-import lTechnologies from './assets/scripts/lTechnologies';
+import LTechnologies from './assets/scripts/LTechnologies';
 import AboutMe from './assets/scripts/AboutMe';
 import MyProjects from './assets/scripts/myProjects';
 import Certificates from './assets/scripts/certificates';
@@ -29,7 +29,7 @@ function App() {
             <MyProjects/>
 
           <h2>Technologies I love:</h2>
-          <lTechnologies/>
+          <LTechnologies/>
 
           <h2>Technologies I've used:</h2>
             <Technologies/>

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import MyFavoriteTech from './myFavoriteTech';
 
-const lTechnologies = () => {
+const LTechnologies = () => {
   return (
     <div className="MyFavoriteTech">
         {MyFavoriteTech.map((tech, index) => (
@@ -23,4 +23,4 @@ const lTechnologies = () => {
   );
 };
 
-export default lTechnologies;
+export default LTechnologies;
