@@ -86,33 +86,6 @@ header img {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-#projects {
-    padding: 0.625rem;
-    background: rgba(13, 13, 13, 0.2);
-}
-
-#projects p {
-    margin-bottom: 0.9375rem;
-    font-size: 1.1rem;
-    font-weight: normal;
-}
-
-#projects a {
-    color: inherit;
-    font-weight: bold;
-    text-decoration: none;
-    background: linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
-                linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
-    background-size: 100% 0.1875rem, 0 0.1875rem;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
-}
-
-#projects a:hover {
-    background-size: 0 0.1875rem, 100% 0.1875rem;
-}
-
 .technologyBoard {
     width: 100%;
     overflow-x: auto;
