@@ -185,7 +185,7 @@ const BackgroundEffect = () => {
         number: {
           density: { enable: true, width: 1920, height: 1080 },
           limit: { mode: "delete", value: 0 },
-          value: 600, // number of dots
+          value: 800, // number of dots
         },
         opacity: {
           value: { min: 0.1, max: 1 },
