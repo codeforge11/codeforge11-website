@@ -1,4 +1,4 @@
-import myTechnologies from "./myTechs";
+import myTechnologies from "../atoms/myTechs";
 
 const mainIconFolder = "src/assets/icons/";
 

@@ -1,9 +1,9 @@
-import BackgroundEffect from './assets/scripts/BackgroundEffect';
-import Technologies from './assets/scripts/Technologies';
-import LTechnologies from './assets/scripts/LTechnologies';
-import AboutMe from './assets/scripts/AboutMe';
-import MyProjects from './assets/scripts/myProjects';
-import Certificates from './assets/scripts/certificates';
+import BackgroundEffect from './assets/scripts/atoms/BackgroundEffect';
+import Technologies from './assets/scripts/sections/Technologies';
+import LTechnologies from './assets/scripts/sections/LTechnologies';
+import AboutMe from './assets/scripts/sections/AboutMe';
+import MyProjects from './assets/scripts/sections/MyProjects';
+import Certificates from './assets/scripts/sections/Certificates';
 
 import './assets/styles/index.css';
 import './assets/styles/techCard.css';

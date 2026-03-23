@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import MyFavoriteTech from './myFavoriteTech';
+import MyFavoriteTech from '../atoms/myFavoriteTech';
 
 const LTechnologies = () => {
   return (
