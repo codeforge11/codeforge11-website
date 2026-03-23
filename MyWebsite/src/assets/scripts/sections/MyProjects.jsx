@@ -1,21 +1,31 @@
 import { motion } from 'framer-motion';
 
 const projects = [
-    {name:"SQLMason" ,
+    {   name:"SQLMason" ,
         desc:"Simple and easy-to-use database management tool.",
         iconLink:"https://raw.githubusercontent.com/codeforge11/SQLMason/refs/heads/main/src/public/logomark.png", 
         src:"https://github.com/codeforge11/SQLMason", 
-        techs:"GO QT"},
-    {name:"CactuDash" ,
+        techs:"GO QT"
+    },
+    {   name:"CactuDash" ,
         desc:"Minimalistic and highly optimized dashboard for efficient server management, including Docker and Docker Compose. ",
         iconLink:"https://raw.githubusercontent.com/codeforge11/CactuDash/master/server/static/img/logomark.svg", 
         src:"https://github.com/codeforge11/CactuDash", 
-        techs:"GO GIN JS"},
-    {name:"TFT-DesktopClock" ,
+        techs:"GO GIN JS"
+    },
+    {   name:"TFT-DesktopClock" ,
         desc:"Simple digital desk clock built with Arduino and a TFT display using appropriate libraries.",
         iconLink:"", 
         src:"https://github.com/codeforge11/TFT-DesktopClock", 
-        techs:"ARDUINO CPP"},
+        techs:"ARDUINO CPP"
+    },
+    {
+        name:"betterLogs",
+        iconLink:"",
+        src: "https://github.com/codeforge11/betterLogs",
+        techs: "GO",
+        desc:"Lightweight and high-performance logging GO library designed for simplicity. It provides an intuitive way to generate logs and manage automated archiving with minimal resource overhead."
+    },
 ]
 
 const myProject = () => {
