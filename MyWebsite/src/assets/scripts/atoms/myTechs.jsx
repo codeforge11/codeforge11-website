@@ -21,6 +21,7 @@ const myTechnologies = [
   { src: "https://neovim.io/", file: "nvim.ico",type:"IDEs & Editors" },
   { src: "https://code.visualstudio.com", file: "vscode.svg",type:"IDEs & Editors" },
   { src: "https://visualstudio.microsoft.com", file: "vs.svg",type:"IDEs & Editors" },
+    { src: "https://www.arduino.cc", file: "arduino.svg",type:"IDEs & Editors" },
   
   // Operating Systems
   { src: "https://www.archlinux.org", file: "arch-auto.svg",type:"OS" },
@@ -54,7 +55,6 @@ const myTechnologies = [
   { src: "https://zen-browser.app/", file: "zen.svg" ,type:"Browsers"},
     
   // Other
-  { src: "https://www.arduino.cc", file: "arduino.svg",type:"Other" },
   { src: "https://www.gimp.org/", file: "gimp.svg" ,type:"Other"},
   { src: "https://www.figma.com", file: "figma.svg" ,type:"Other"},
   { src: "https://www.virtualbox.org/", file: "virtualbox-auto.svg",type:"Other" },
