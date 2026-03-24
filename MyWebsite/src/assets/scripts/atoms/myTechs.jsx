@@ -1,64 +1,79 @@
 const myTechnologies = [
+  // Languages
   { src: "https://golang.org", file: "golang.svg", type:"lang" },
-  { src: "https://www.jetbrains.com/go/", file: "goland.svg",type:"ide" },
   { src: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5", file: "html.svg",type:"lang" },
   { src: "https://developer.mozilla.org/en-US/docs/Web/CSS", file: "css.svg",type:"lang" },
-  { src: "https://www.arduino.cc", file: "arduino.svg",type:"other" },
+  { src: "https://www.php.net", file: "php.svg" ,type:"lang"},
+  { src: "https://www.ruby-lang.org", file: "ruby.svg" ,type:"lang"},
+  { src: "https://www.python.org", file: "python.svg",type:"lang" },
+  { src: "https://isocpp.org", file: "cpp.svg",type:"lang" },
+  { src: "https://docs.microsoft.com/en-us/dotnet/csharp/", file: "cs.svg",type:"lang" },
+  { src: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", file: "javascript.svg",type:"lang" },
+  
+  // IDEs
+  { src: "https://www.jetbrains.com/go/", file: "goland.svg",type:"ide" },
   { src: "https://www.jetbrains.com/ruby/", file: "rubymine.svg",type:"ide" },
   { src: "https://www.jetbrains.com/pycharm/", file: "pycharm.svg",type:"ide" },
   { src: "https://www.jetbrains.com/clion/", file: "clion.svg",type:"ide" },
   { src: "https://www.jetbrains.com/datagrip/", file: "datagrip.svg",type:"ide" },
   { src: "https://www.jetbrains.com/dataspell/", file: "dataspell.svg",type:"ide" },
-  { src: "https://www.php.net", file: "php.svg" ,type:"lang"},
-  { src: "https://www.ruby-lang.org", file: "ruby.svg" ,type:"lang"},
-  { src: "https://www.gimp.org/", file: "gimp.svg" ,type:"other"},
-  { src: "https://www.figma.com", file: "figma.svg" ,type:"other"},
   { src: "https://developer.android.com/studio", file: "androidstudio.svg",type:"ide" },
   { src: "https://neovim.io/", file: "nvim.ico",type:"ide" },
   { src: "https://code.visualstudio.com", file: "vscode.svg",type:"ide" },
   { src: "https://visualstudio.microsoft.com", file: "vs.svg",type:"ide" },
-  { src: "https://www.python.org", file: "python.svg",type:"lang" },
-  { src: "https://isocpp.org", file: "cpp.svg",type:"lang" },
-  { src: "https://docs.microsoft.com/en-us/dotnet/csharp/", file: "cs.svg",type:"lang" },
-  { src: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", file: "javascript.svg",type:"lang" },
+  
+  // Operating Systems
   { src: "https://www.archlinux.org", file: "arch-auto.svg",type:"os" },
   { src: "https://www.debian.org", file: "debian.svg",type:"os" },
   { src: "https://getfedora.org", file: "fedora-auto.svg",type:"os" },
   { src: "https://ubuntu.com", file: "ubuntu.svg",type:"os" },
   { src: "https://pop.system76.com", file: "popos.svg",type:"os" },
+  { src: "https://endeavouros.com/", file: "endeavour.svg",type:"os" },
+  { src: "https://www.freebsd.org/", file: "bsd-auto.svg",type:"os" },
+  { src: "https://www.microsoft.com/windows", file: "windows-auto.svg",type:"os" },
+  
+  // Libraries & Frameworks
   { src: "https://nodejs.org", file: "nodejs-auto.svg",type:"libFr" },
+  { src: "https://react.dev", file: "react-auto.svg" ,type:"libFr"},
+  { src: "https://www.qt.io", file: "qt-auto.svg",type:"libFr" },
+  { src: "https://gin-gonic.com/", file: "gin-auto.svg" ,type:"libFr"},
+  
+  // Databases
+  { src: "https://www.sqlite.org/", file: "sqlite.svg",type:"db" },
+  { src: "https://mariadb.org", file: "mariadb-auto.svg" ,type:"db"},
+  { src: "https://www.mysql.com", file: "mysql-auto.svg",type:"db" },
+  
+  // AI Tools
+  { src: "https://ollama.com/", file: "ollama-auto.svg" ,type:"ai"},
+  { src: "https://www.deepseek.com/", file: "deepseek.ico",type:"ai" },
+  { src: "https://claude.ai/", file: "claude.ico",type:"ai" },
+  { src: "https://gemini.google.com/", file: "gemini.svg" ,type:"ai"},
+  
+  // Browsers
+  { src: "https://www.torproject.org/", file: "tor.svg",type:"browser" },
+  { src: "https://zen-browser.app/", file: "zen.svg" ,type:"browser"},
+    
+  // Other
+  { src: "https://www.arduino.cc", file: "arduino.svg",type:"other" },
+  { src: "https://www.gimp.org/", file: "gimp.svg" ,type:"other"},
+  { src: "https://www.figma.com", file: "figma.svg" ,type:"other"},
   { src: "https://www.virtualbox.org/", file: "virtualbox-auto.svg",type:"other" },
   { src: "https://www.proxmox.com", file: "proxmox-auto.svg",type:"other" },
   { src: "https://stackoverflow.com", file: "stackoverflow-auto.svg",type:"other" },
   { src: "https://www.cloudflare.com/", file: "cloudflare-auto.svg",type:"other" },
-  { src: "https://ollama.com/", file: "ollama-auto.svg" ,type:"ai"},
-  { src: "https://react.dev", file: "react-auto.svg" ,type:"libFr"},
-  { src: "https://www.torproject.org/", file: "tor.svg",type:"browser" },
-  { src: "https://zen-browser.app/", file: "zen.svg" ,type:"browser"},
-  { src: "https://endeavouros.com/", file: "endeavour.svg",type:"os" },
-  { src: "https://www.qt.io", file: "qt-auto.svg",type:"libFr" },
-  { src: "https://www.freebsd.org/", file: "bsd-auto.svg",type:"os" },
-  { src: "https://www.microsoft.com/windows", file: "windows-auto.svg",type:"os" },
   { src: "https://www.putty.org", file: "putty-auto.svg" ,type:"other"},
   { src: "https://www.raspberrypi.org", file: "raspberrypi-auto.svg",type:"other" },
   { src: "https://git-scm.com", file: "git-auto.svg" ,type:"other"},
   { src: "https://github.com", file: "github-auto.svg" ,type:"other"},
   { src: "https://www.apachefriends.org/index.html", file: "xampp.svg" ,type:"other"},
   { src: "https://cockpit-project.org/", file: "cockpit.svg",type:"other" },
-  { src: "https://gin-gonic.com/", file: "gin-auto.svg" ,type:"libFr"},
-  { src: "https://www.npmjs.com", file: "npm-auto.svg" ,type:"pkgMng"},
   { src: "https://www.docker.com", file: "docker.svg",type:"other" },
-  { src: "https://www.sqlite.org/", file: "sqlite.svg",type:"db" },
-  { src: "https://www.deepseek.com/", file: "deepseek.ico",type:"ai" },
-  { src: "https://claude.ai/", file: "claude.ico",type:"ai" },
   { src: "https://github.com/gtsteffaniak/filebrowser", file: "filebrowser.svg",type:"other" },
   { src: "https://www.openmediavault.org/", file: "openmediavault.svg",type:"other" },
   { src: "https://filerise.net/", file: "filerise.svg" ,type:"other"},
   { src: "https://homarr.dev/", file: "homarr.svg" ,type:"other"},
   { src: "https://obsidian.md/", file: "obsidian.svg",type:"other" },
-  { src: "https://mariadb.org", file: "mariadb-auto.svg" ,type:"db"},
-  { src: "https://www.mysql.com", file: "mysql-auto.svg",type:"db" },
-  { src: "https://gemini.google.com/", file: "gemini.svg" ,type:"ai"}
+  { src: "https://www.npmjs.com", file: "npm-auto.svg" ,type:"other"}
 ];
-//db,ai,other,os,libFr,pkgMng,lang,ide
+//db,ai,other,os,libFr,lang,ide,browser
 export default myTechnologies;
