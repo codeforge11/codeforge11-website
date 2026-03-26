@@ -16,13 +16,14 @@
 	border-bottom: 0.0625rem solid #2d3748;
 	background-color: #1a202c;
 	overflow-x: hidden;
+	max-width:100%
 }
 
 .tab {
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
-	padding: 1rem 1.25rem;
+	padding: 1rem 1rem;
 	background: transparent;
 	border: none;
 	border-bottom: 0.125rem solid transparent;
