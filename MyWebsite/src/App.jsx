@@ -6,7 +6,7 @@ import Certificates from './assets/scripts/sections/Certificates';
 import Techno from './assets/scripts/sections/Techno'
 
 import './assets/styles/index.css';
-import './assets/styles/techCard.css';
+import './assets/styles/favTechCard.css';
 import './assets/styles/projects.css'
 import './assets/styles/techno.css'
 
