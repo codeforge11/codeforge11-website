@@ -16,13 +16,13 @@ function App() {
       <BackgroundEffect />
         
       <header>
-          <div class="mx-auto flex h-full max-w-content w-full" >
+          <div className="mx-auto flex h-full max-w-content w-full" >
               <a href="/"><img src="src/assets/img/logomark.svg" alt="logomark" height="90" /></a>
           </div>
 
       </header>
     
-      <div class="container">
+      <div className="container">
           <AboutMe/>
 
           <h2>My projects:</h2>

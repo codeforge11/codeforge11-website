@@ -38,9 +38,9 @@ const myProject = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     whileHover={{ scale: 1.01, y: -5 }}
                 >
-                    <div class="projectBox" style={{ display: "flex" }} onClick={() => window.open(x.src, "_blank")}>
+                    <div className="projectBox" style={{ display: "flex" }} onClick={() => window.open(x.src, "_blank")}>
         
-                        <div class="projectCenter">
+                        <div className="projectCenter">
                             <h1>{x.name}</h1>                          
                             <p>{x.desc}</p>
                             <p style={{color:'lightSkyBlue'}}>{x.techs}</p>
