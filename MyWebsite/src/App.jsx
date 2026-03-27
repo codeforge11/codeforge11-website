@@ -3,7 +3,7 @@ import LTechnologies from './assets/scripts/sections/LTechnologies';
 import AboutMe from './assets/scripts/sections/AboutMe';
 import MyProjects from './assets/scripts/sections/MyProjects';
 import Certificates from './assets/scripts/sections/Certificates';
-import Techno from './assets/scripts/sections/Techno'
+import Techno,{MainIconFolder} from './assets/scripts/sections/Techno'
 
 import './assets/styles/index.css';
 import './assets/styles/favTechCard.css';
@@ -39,9 +39,9 @@ function App() {
 
             <div id="bottom">
                 <div>
-                    <a href="https://discord.com/users/626479749262475294" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/discord.svg" width="64" height="64" /></a>
-                    <a href="https://stackoverflow.com/users/27400639" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/stackoverflow/stackoverflow-original.svg" width="64" height="64" /></a>
-                    <a href="https://github.com/codeforge11" target="_blank"><img src="https://raw.githubusercontent.com/LelouchFR/skill-icons/refs/heads/main/assets/github-auto.svg" width="64" height="64" /></a>
+                    <a href="https://discord.com/users/626479749262475294" target="_blank"><img src={`/${MainIconFolder}/discord.svg`} width="64" height="64" /></a>
+                    <a href="https://stackoverflow.com/users/27400639" target="_blank"><img src={`/${MainIconFolder}/stackoverflow-original.svg`} width="64" height="64" /></a>
+                    <a href="https://github.com/codeforge11" target="_blank"><img src={`/${MainIconFolder}/github-auto.svg`} width="64" height="64" /></a>
                 </div>
                 <p>Made with ☕ by ©codeforge11 2026</p>
             </div>

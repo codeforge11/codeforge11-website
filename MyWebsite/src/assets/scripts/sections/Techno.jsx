@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import myTechnologies from "../atoms/myTechs";
 
-const mainIconFolder = "src/assets/icons/";
+export const MainIconFolder = "src/assets/icons/";
 
 const techGroups = [
   "Languages",
@@ -20,7 +20,7 @@ const Techno = () => {
   useEffect(() => {
     myTechnologies.forEach((tech) => {
       const img = new Image();
-      img.src = `/${mainIconFolder}${tech.file}`;
+      img.src = `/${MainIconFolder}${tech.file}`;
     });
   }, []);
 
@@ -63,7 +63,7 @@ const Techno = () => {
                 style={tech.innerColor ? { backgroundColor: tech.innerColor } : {}}
               >
                 <img
-                  src={`/${mainIconFolder}${tech.file}`}
+                  src={`/${MainIconFolder}${tech.file}`}
                   className="techCardIcon"
                 />
               </div>
