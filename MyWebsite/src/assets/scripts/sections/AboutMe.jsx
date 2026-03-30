@@ -15,7 +15,11 @@ const AboutMe = () => {
             <p>🌱 I am currently learning new technologies</p>
             <p>📖 I specialize in solving complex problems</p>
             <p>☕ I live in love with coffee</p>
-          </div>
+         <br />
+         
+          <h3>More about me:</h3>
+            <p></p>
+           </div>
     </>)
 };
 
