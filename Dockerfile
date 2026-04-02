@@ -1,9 +1,9 @@
 FROM node:latest AS build
 WORKDIR /app
 COPY MyWebsite/package*.json ./
-RUN npm install
+RUN pnpm install
 COPY MyWebsite/ ./
-RUN npm run build
+RUN pnpm run build
 
 FROM nginx:latest
 
