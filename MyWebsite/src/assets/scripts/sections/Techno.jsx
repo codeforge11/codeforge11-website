@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import myTechnologies from "../atoms/myTechs";
 
 export const MainIconFolder = "src/assets/icons/";
@@ -24,7 +24,9 @@ const Techno = () => {
     });
   }, []);
 
-  const currentTechs = myTechnologies.filter((tech) => tech.type === activeTab);
+  const currentTechs = useMemo(() => 
+    myTechnologies.filter((tech) => tech.type === activeTab),[activeTab]
+  );
 
   return (
     <div className="techCardContainer">
