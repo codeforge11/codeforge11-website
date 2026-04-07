@@ -5,12 +5,18 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -49,8 +55,9 @@ header img {
 }
 
 .container {
-    width: 100%;   
-    max-width: 68.75rem; 
+    width: 100%;
+    max-width: 68.75rem;
+    min-width: 0;
     background: rgba(30, 30, 30, 0.85);
     backdrop-filter: blur(0.625rem);
     border-radius: 1.5625rem;
@@ -62,21 +69,25 @@ header img {
 
 .container h1 {
     padding: 2.5rem 1.25rem 0.625rem 1.25rem;
-    font-size: clamp(1.8rem, 5vw, 3.5rem);
+    font-size: clamp(1.5rem, 5vw, 3.5rem);
     text-align: center;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 #text {
-    padding: 0 1.25rem;
+    padding: 0 1.25rem 1.25rem 1.25rem;
+    overflow: hidden;
 }
 
-#text p {
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    /* margin-bottom: 0.625rem; */
+#text p, #text h3 {
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
     text-align: left;
     font-weight: bold;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .container h2 {
@@ -91,7 +102,7 @@ header img {
     overflow-x: auto;
     padding: 0.9375rem;
     background-color: rgba(13, 13, 13, 0.1);
-    -webkit-overflow-scrolling: touch; 
+    -webkit-overflow-scrolling: touch;
 }
 
 #bottom {
@@ -118,17 +129,46 @@ header img {
     opacity: 0.8;
 }
 
-@media (min-width: 48rem) {
+@media (max-width: 480px) {
     body {
-        padding: 5rem 1.25rem 1.25rem 1.25rem;
-    }
-
-    header .mx-auto {
-        width: 90%;
+        padding: 4.5rem 0.5rem 1rem 0.5rem;
+        align-items: stretch;
     }
 
     .container {
+        border-radius: 0.75rem;
         width: 100%;
+    }
+
+    .container h1 {
+        font-size: 1.6rem;
+        padding: 1.5rem 1rem 0.5rem 1rem;
+        text-align: left;
+    }
+
+    .container h2 {
+        font-size: 1.1rem;
+        padding: 0.875rem 1rem 0.25rem 1rem;
+    }
+
+    #text {
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    #text p, #text h3 {
+        font-size: 0.9rem;
+    }
+
+    #bottom img {
+        width: 44px;
+        height: 44px;
+        margin: 0 0.4rem;
+    }
+}
+
+@media (min-width: 48rem) {
+    body {
+        padding: 5rem 1.25rem 1.25rem 1.25rem;
     }
 
     .container h1 {
@@ -137,7 +177,6 @@ header img {
     }
 
     #text p {
-        text-align: left;
         padding-left: 1.25rem;
     }
 
@@ -162,14 +201,8 @@ header img {
     }
 }
 
-@media (max-width: 480px) {
-    .container h1 {
-        font-size: 2rem;
-    }
-}
-
 @media (max-width: 768px) {
-    .Table, 
+    .Table,
     .Table tbody {
         display: flex;
         flex-wrap: wrap;
@@ -179,7 +212,7 @@ header img {
     }
 
     .Table tr {
-        display: contents; 
+        display: contents;
     }
 
     .Table td {
@@ -189,9 +222,9 @@ header img {
         width: 3.5rem;
         height: 3.5rem;
         margin: 0.25rem;
-        
-        min-width: 3.5rem; 
+        min-width: 3.5rem;
     }
+
     .Table td.empty {
         display: none !important;
     }

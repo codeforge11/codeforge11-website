@@ -12,14 +12,13 @@ import './assets/styles/techno.css'
 
 function App() {
   return (
-    <>
+    <div style={{ overflowX: 'hidden', width: '100%' }}>
       <BackgroundEffect />
         
       <header>
           <div className="mx-auto flex h-full max-w-content w-full" >
               <a href="/"><img src="src/assets/img/logomark.svg" alt="logomark" height="90" /></a>
           </div>
-
       </header>
     
       <div className="container">
@@ -47,7 +46,7 @@ function App() {
             </div>
           
       </div>
-    </>
+    </div>
   )
 }
 

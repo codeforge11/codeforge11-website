@@ -1,6 +1,6 @@
 .MyFavoriteTech {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 1.25rem;
     padding: 2%;
     background: rgba(13, 13, 13, 0.3);
@@ -30,7 +30,7 @@
     margin-bottom: 0.5rem;
 }
 
-.iconCard img{
+.iconCard img {
     width: 100%;
     height: auto;
     max-width: 2.5rem;
@@ -51,8 +51,39 @@
     line-height: 1.4;
 }
 
-#goCard { background: linear-gradient(135deg, rgba(0, 173, 216, 0.25), rgba(0, 125, 156, 0.35)); }
+#goCard     { background: linear-gradient(135deg, rgba(0, 173, 216, 0.25), rgba(0, 125, 156, 0.35)); }
 #dockerCard { background: linear-gradient(135deg, rgba(36, 150, 237, 0.25), rgba(13, 77, 161, 0.35)); }
-#nvimCard { background: linear-gradient(135deg, rgba(49, 120, 198, 0.25), rgba(35, 89, 150, 0.35)); }
-#ginCard { background: linear-gradient(135deg, rgba(97, 218, 251, 0.25), rgba(34, 116, 138, 0.35)); }
-#qtCard { background: linear-gradient(135deg, rgba(0, 151, 156, 0.25), rgba(0, 95, 99, 0.35)); }
+#nvimCard   { background: linear-gradient(135deg, rgba(49, 120, 198, 0.25), rgba(35, 89, 150, 0.35)); }
+#ginCard    { background: linear-gradient(135deg, rgba(97, 218, 251, 0.25), rgba(34, 116, 138, 0.35)); }
+#qtCard     { background: linear-gradient(135deg, rgba(0, 151, 156, 0.25), rgba(0, 95, 99, 0.35)); }
+
+@media (max-width: 480px) {
+    .MyFavoriteTech {
+        grid-template-columns: 1fr;
+        gap: 0.875rem;
+        padding: 0.875rem;
+    }
+
+    .techCard,
+    #goCard,
+    #dockerCard,
+    #nvimCard,
+    #ginCard,
+    #qtCard {
+        padding: 1.1rem;
+    }
+
+    .titleCard {
+        font-size: 1.1rem !important;
+    }
+
+    .descCard {
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 640px) {
+    .MyFavoriteTech {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
