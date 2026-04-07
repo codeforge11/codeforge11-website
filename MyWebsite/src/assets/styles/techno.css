@@ -44,6 +44,8 @@
     white-space: nowrap;
 
     flex-shrink: 0;
+
+        cursor: url(src/assets/cursor/link.png), pointer;
 }
 
 .tab:hover {

@@ -10,7 +10,7 @@
     justify-content: space-between;
     gap: 1rem;
 
-    cursor: url(assets/cursor/link.png), pointer;
+    cursor: url(src/assets/cursor/link.png), pointer;
     transition: background 0.3s ease;
 }
 

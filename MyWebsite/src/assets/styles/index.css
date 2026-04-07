@@ -23,7 +23,7 @@ body {
     color: #f0f0f0;
     line-height: 1.6;
     padding: 5rem 0.625rem 1.25rem 0.625rem;
-    cursor: url(assets/cursor/point.png), default;
+    cursor: url(src/assets/cursor/point.png), default;
 }
 
 header {
@@ -197,7 +197,7 @@ header img {
 
 @media (pointer: fine) {
     a, .technologies img, #projects a {
-        cursor: url(assets/cursor/link.png), pointer;
+        cursor: url(src/assets/cursor/link.png), pointer;
     }
 }
 
