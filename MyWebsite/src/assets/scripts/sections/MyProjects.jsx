@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
+import { useMemo } from 'react';
 
-const projects = [
+const projectsData = [
     {   name:"SQLMason" ,
         desc:"Simple and easy-to-use database management tool.",
         iconLink:"https://raw.githubusercontent.com/codeforge11/SQLMason/refs/heads/main/src/public/logomark.png", 
@@ -29,6 +30,7 @@ const projects = [
 ]
 
 const myProject = () => {
+    const projects = useMemo(() => projectsData, []);
     return ( <>
             {projects.map((x) => (
                 <motion.div
