@@ -2,7 +2,6 @@ import BackgroundEffect from './assets/scripts/atoms/BackgroundEffect';
 import LTechnologies from './assets/scripts/sections/LTechnologies';
 import AboutMe from './assets/scripts/sections/AboutMe';
 import MyProjects from './assets/scripts/sections/MyProjects';
-import Certificates from './assets/scripts/sections/Certificates';
 import Techno,{MainIconFolder} from './assets/scripts/sections/Techno'
 
 import './assets/styles/index.css';
@@ -33,8 +32,6 @@ function App() {
           <h2>Technologies I've used:</h2>
             <Techno/>
 
-          <h2>My certificates:</h2>
-            <Certificates/>
 
             <div id="bottom">
                 <div>
