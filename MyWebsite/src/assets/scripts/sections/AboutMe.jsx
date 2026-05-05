@@ -17,8 +17,6 @@ const AboutMe = () => {
             <p>☕ I live in love with coffee</p>
          <br />
          
-          <h3>More about me:</h3>
-            <p></p>
            </div>
     </>)
 };

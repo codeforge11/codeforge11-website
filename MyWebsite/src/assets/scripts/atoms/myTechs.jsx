@@ -73,7 +73,8 @@ const myTechnologies = [
   { src: "https://filerise.net/", file: "filerise.svg" ,type:"Other"},
   { src: "https://homarr.dev/", file: "homarr.svg" ,type:"Other"},
   { src: "https://obsidian.md/", file: "obsidian.svg",type:"Other" },
-  { src: "https://www.npmjs.com", file: "npm-auto.svg" ,type:"Other"}
+  { src: "https://www.npmjs.com", file: "npm-auto.svg" ,type:"Other"},
+  { src: "https://docusaurus.io/", file: "docusaurus.svg" ,type:"Other"}
 ];
 
 export default myTechnologies;

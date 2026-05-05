@@ -20,6 +20,8 @@
 
     overflow-x: auto;
     max-width: 100%;
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+    touch-action: pan-x; /* allow horizontal touch panning on touch devices */
 
     scrollbar-width: none;     
     -ms-overflow-style: none;   
@@ -46,8 +48,8 @@
     white-space: nowrap;
 
     flex-shrink: 0;
-
-        cursor: url(src/assets/cursor/link.png), pointer;
+    
+    cursor: url(src/assets/cursor/link.png), pointer;
 }
 
 .tab:hover {
