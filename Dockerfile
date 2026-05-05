@@ -1,5 +1,8 @@
 FROM node:latest AS build
 WORKDIR /app
+
+RUN npm install -g pnpm
+
 COPY MyWebsite/package*.json ./
 RUN pnpm install
 COPY MyWebsite/ ./
