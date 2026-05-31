@@ -22,7 +22,7 @@ body {
     background-attachment: fixed;
     color: #f0f0f0;
     line-height: 1.6;
-    padding: 5rem 0.625rem 1.25rem 0.625rem;
+    /* padding: 4rem 0.5rem 1rem 0.5rem;  */
     cursor: url(src/assets/cursor/point.png), default;
 }
 
@@ -31,7 +31,8 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    height: 3.75rem;
+    height: 5rem; 
+    padding: 0; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,13 +48,15 @@ header .mx-auto {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%; 
 }
 
 header img {
     height: 5rem;
     width: auto;
+    margin-top: 0;
+    display: block; 
 }
-
 .container {
     width: 100%;
     max-width: 68.75rem;
@@ -68,7 +71,7 @@ header img {
 }
 
 .container h1 {
-    padding: 2.5rem 1.25rem 0.625rem 1.25rem;
+    padding: 2rem 1rem 0.5rem 1rem;
     font-size: clamp(1.5rem, 5vw, 3.5rem);
     text-align: center;
     font-weight: bold;
@@ -78,7 +81,7 @@ header img {
 }
 
 #text {
-    padding: 0 1.25rem 1.25rem 1.25rem;
+    padding: 0 1rem 1rem 1rem;
     overflow: hidden;
 }
 
@@ -91,8 +94,8 @@ header img {
 }
 
 .container h2 {
-    padding: 1.25rem;
-    padding-bottom: 0.3125rem;
+    padding: 1rem;
+    padding-bottom: 0.25rem;
     font-size: 1.5rem;
     background-color: rgba(0, 0, 0, 0.1);
 }
@@ -106,7 +109,7 @@ header img {
 }
 
 #bottom {
-    padding: 0.9375rem 1.25rem;
+    padding: 0.75rem 1rem;
     text-align: center;
     background-color: rgba(40, 40, 40, 0.95);
     border-top: 1px solid rgba(62, 11, 144, 0.4);
@@ -131,7 +134,7 @@ header img {
 
 @media (max-width: 480px) {
     body {
-        padding: 4.5rem 0.5rem 1rem 0.5rem;
+        padding: 4.25rem 0.4rem 0.9rem 0.4rem;
         align-items: stretch;
     }
 
@@ -141,18 +144,18 @@ header img {
     }
 
     .container h1 {
-        font-size: 1.6rem;
-        padding: 1.5rem 1rem 0.5rem 1rem;
+        font-size: 1.55rem;
+        padding: 1.35rem 0.9rem 0.45rem 0.9rem;
         text-align: left;
     }
 
     .container h2 {
-        font-size: 1.1rem;
-        padding: 0.875rem 1rem 0.25rem 1rem;
+        font-size: 1.05rem;
+        padding: 0.75rem 0.9rem 0.2rem 0.9rem;
     }
 
     #text {
-        padding: 0 1rem 1rem 1rem;
+        padding: 0 0.9rem 0.9rem 0.9rem;
     }
 
     #text p, #text h3 {
