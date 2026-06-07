@@ -97,7 +97,7 @@ header img {
 
 #text {
     padding: 0 clamp(0.9rem, 2vw, 1rem)
-                    clamp(0.9rem, 2vw, 1rem)
+                    0
                     clamp(0.9rem, 2vw, 1rem);
     overflow: hidden;
 }
