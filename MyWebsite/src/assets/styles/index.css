@@ -21,7 +21,10 @@ body {
     background-attachment: fixed;
     color: #f0f0f0;
     line-height: 1.6;
-    padding: clamp(4.25rem, 8vw, 5rem) clamp(0.4rem, 2vw, 1.25rem) clamp(0.9rem, 2vw, 1.25rem) clamp(0.4rem, 2vw, 1.25rem);
+    padding: clamp(4.25rem, 8vw, 5rem) 
+                    clamp(0.4rem, 2vw, 1.25rem) 
+                    clamp(0.9rem, 2vw, 1.25rem) 
+                    clamp(0.4rem, 2vw, 1.25rem);
     cursor: url(src/assets/cursor/point.png), default;
 }
 
@@ -71,7 +74,10 @@ header img {
 }
 
 .container h1 {
-    padding: clamp(1.35rem, 2vw, 2.5rem) clamp(0.9rem, 2vw, 2.5rem) clamp(0.45rem, 1vw, 0.625rem) clamp(0.9rem, 2vw, 2.5rem);
+    padding: clamp(1.35rem, 2vw, 2.5rem) 
+                    clamp(0.9rem, 2vw, 2.5rem) 
+                    clamp(0.45rem, 1vw, 0.625rem) 
+                    clamp(0.9rem, 2vw, 2.5rem);
     font-size: clamp(1.5rem, 5vw, 3.5rem);
     text-align: left;
     font-weight: bold;
@@ -81,13 +87,18 @@ header img {
 }
 
 .container h2 {
-    padding: clamp(0.75rem, 2vw, 1rem) clamp(0.9rem, 2vw, 1rem) clamp(0.2rem, 1vw, 0.25rem) clamp(0.9rem, 2vw, 1rem);
+    padding: clamp(0.75rem, 2vw, 1rem)
+                    clamp(0.9rem, 2vw, 1rem)
+                    clamp(0.2rem, 1vw, 0.25rem)
+                    clamp(0.9rem, 2vw, 1rem);
     font-size: clamp(1.05rem, 3vw, 1.5rem);
     background-color: rgba(0, 0, 0, 0.1);
 }
 
 #text {
-    padding: 0 clamp(0.9rem, 2vw, 1rem) clamp(0.9rem, 2vw, 1rem) clamp(0.9rem, 2vw, 1rem);
+    padding: 0 clamp(0.9rem, 2vw, 1rem)
+                    clamp(0.9rem, 2vw, 1rem)
+                    clamp(0.9rem, 2vw, 1rem);
     overflow: hidden;
 }
 
