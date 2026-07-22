@@ -31,29 +31,30 @@ const projectsData = [
 
 const myProject = () => {
     const projects = useMemo(() => projectsData, []);
-    return ( <>
-            {projects.map((x) => (
-                <motion.div
-                    key={x.name}
-                    initial={{ opacity: 0, y: 20 }}
-                    viewport={{ once: true }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    whileHover={{ scale: 1.01, y: -5 }}
-                >
-                    <div className="projectBox" style={{ display: "flex" }} onClick={() => window.open(x.src, "_blank")}>
-        
-                        <div className="projectCenter">
-                            <h1>{x.name}</h1>                          
-                            <p>{x.desc}</p>
-                            <p style={{color:'lightSkyBlue'}}>{x.techs}</p>
-                        </div>
 
-                        {x.iconLink !== "" && (
-                            <img src={x.iconLink} alt={x.name}/>
-                        )}
+    return ( <>
+        {projects.map((x) => (
+            <motion.div
+                key={x.name}
+                initial={{ opacity: 0, y: 20 }}
+                viewport={{ once: true }}
+                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 1.01, y: -5 }}
+            >
+                <div className="projectBox" style={{ display: "flex" }} onClick={() => window.open(x.src, "_blank")}>
+
+                    <div className="projectCenter">
+                        <h1>{x.name}</h1>                          
+                        <p>{x.desc}</p>
+                        <p style={{color:'lightSkyBlue'}}>{x.techs}</p>
                     </div>
-                </motion.div>
-            ))}
+
+                    {x.iconLink !== "" && (
+                        <img src={x.iconLink} alt={x.name}/>
+                    )}
+                </div>
+            </motion.div>
+        ))}
         </>
     );
 }

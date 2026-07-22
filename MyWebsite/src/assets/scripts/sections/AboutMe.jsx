@@ -4,7 +4,7 @@ const AboutMe = () => {
             <span>Hello! I'm </span>
             <span style={{color:'lightSkyBlue'}}> codeforge11</span>
         </h1>
-          <div id="text">
+        <div id="text">
             <h3>Shortly about me:</h3>
             <p>I am a new programmer entering the world of programming, ready to learn new technologies.</p>
             <p>
@@ -15,9 +15,7 @@ const AboutMe = () => {
             <p>🌱 I am currently learning new technologies</p>
             <p>📖 I specialize in solving complex problems</p>
             <p>☕ I live in love with coffee</p>
-
-         
-           </div>
+        </div>
     </>)
 };
 

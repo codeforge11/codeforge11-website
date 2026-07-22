@@ -8,6 +8,7 @@ import MyProjects from './assets/scripts/sections/MyProjects';
 import Techno,{MainIconFolder} from './assets/scripts/sections/Techno'
 import Bottom from './assets/scripts/sections/Bottom'
 
+//Styles
 import './assets/styles/index.css';
 import './assets/styles/favTechCard.css';
 import './assets/styles/projects.css'
