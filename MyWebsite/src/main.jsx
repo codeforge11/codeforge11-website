@@ -1,43 +1,68 @@
-import { StrictMode } from 'react'
+import { StrictMode, useEffect, useState } from 'react'
 import { createRoot } from 'react-dom/client'
+import { ParticlesProvider } from '@tsparticles/react'
 
-import BackgroundEffect from './assets/scripts/atoms/BackgroundEffect';
-import LTechnologies from './assets/scripts/sections/LTechnologies';
-import AboutMe from './assets/scripts/sections/AboutMe';
-import MyProjects from './assets/scripts/sections/MyProjects';
-import Techno,{MainIconFolder} from './assets/scripts/sections/Techno'
-import Bottom from './assets/scripts/sections/Bottom'
+//Code import:
+import { NavSection } from './scripts/data'
 
-//Styles
-import './assets/styles/index.css';
-import './assets/styles/favTechCard.css';
-import './assets/styles/projects.css'
-import './assets/styles/techno.css'
+import Navbar from './scripts/sites/header'
+
+import AboutMeS from './scripts/sites/aboutMe'
+import MyCertificatesSection from './scripts/sites/myCertificates'
+import MyProjects from './scripts/sites/myProjects'
+import Footer from './scripts/sites/footer'
+
+import Techs from './scripts/sites/myTech'
+import FavoriteTechnology from './scripts/sites/favTech'
+
+import BackgroundEffect from './scripts/atoms/BackgroundEffect'
+
+import ParticlesInit from './scripts/atoms/particlesEngine'
+
+//Styles:
+import './styles/index.css'
+import './styles/atoms.css'
+import './styles/header.css'
+import './styles/aboutMe.css'
+import './styles/footer.css'
+import './styles/favTech.css'
+import './styles/myTech.css'
+import './styles/myProjects.css'
+import './styles/myCertificates.css'
 
 function App() {
+  const [activeSection, setActiveSection] = useState('AboutMe')
+
+  useEffect(() => {
+    const obs = new IntersectionObserver(
+      entries => entries.forEach(({ isIntersecting, target }) => {
+        if (isIntersecting) setActiveSection(target.id)
+      }),
+      { threshold: 0.3 }
+    )
+    NavSection
+      .map(({ id }) => document.getElementById(id))
+      .filter(Boolean)
+      .forEach(element => obs.observe(element))
+
+    return () => obs.disconnect()
+  }, [])
+
   return (
-    <div style={{ overflowX: 'hidden', width: '100%' }}>
+    <div>
       <BackgroundEffect />
-        
-      <header>
-          <div className="mx-auto flex h-full max-w-content w-full" >
-              <a href="/"><img src="src/assets/img/logomark.svg" alt="logomark" height="90" /></a>
-          </div>
-      </header>
-    
-      <div className="container">
-          <AboutMe/>
 
-          <h2>My projects:</h2>
-            <MyProjects/>
+      <Navbar active={activeSection} />
 
-          <h2>Technologies I love:</h2>
-          <LTechnologies/>
+      <div className="appContent">
+        <AboutMeS />
+        <FavoriteTechnology />
+        <Techs />
 
-          <h2>Technologies I've used:</h2>
-            <Techno/>
+        <MyCertificatesSection />
+        <MyProjects />
 
-            <Bottom/>
+        <Footer />
       </div>
     </div>
   )
@@ -47,6 +72,8 @@ export default App
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <ParticlesProvider init={ParticlesInit}>
+      <App />
+    </ParticlesProvider>
   </StrictMode>,
 )

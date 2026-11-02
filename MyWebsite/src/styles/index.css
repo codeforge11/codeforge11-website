@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: #080810;
+  color: #e8e8f0;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100svh;
+  -webkit-font-smoothing: antialiased;
+  cursor: url(src/public/cursor/point.png), default;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #1e1e2e #080810;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  padding: 2px 8px;
+  border: auto solid #1e1e2e;
+  border-radius: 3px;
+  color: #6b6b9a;
+  letter-spacing: 0.03em;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #080810; }
+::-webkit-scrollbar-thumb { background: #1e1e2e; border-radius: 2px; }
+
+::selection { background: #00ff8833; color: #00ff88; }
+
+.section {
+  padding: 32px 12px;
+  border-bottom: 1px solid #1e1e2e;
+}
+
+.appContent {
+  min-height: 100svh;
+  padding-top: 52px;
+}
+@media (min-width: 768px) { .section { padding: 40px 24px; } }
+@media (min-width: 1200px) { .section { padding: 48px 48px; } }
+
+.sectionHeading {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  margin: 0 0 40px;
+  color: #e8e8f0;
+  letter-spacing: -0.02em;
+  font-size: clamp(28px, 5vw, 56px);
+}
+@media (min-width: 768px) { .sectionHeading { margin-bottom: 56px; } }

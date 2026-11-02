@@ -1,0 +1,174 @@
+.favGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid #1e1e2e;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.favTabs {
+  background: #0f0f1a;
+  display: flex;
+  overflow-x: auto;
+}
+
+.favTab {
+  width: 100%;
+  min-width: 140px;
+  text-align: left;
+  padding: 14px 16px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: url(src/public/cursor/link.png), pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.15s;
+  flex-shrink: 0;
+}
+
+.favTab.active {
+  background: #080810;
+}
+
+.favTab.go.active {
+  border-bottom-color: #00acd7;
+}
+
+.favTab.docker.active {
+  border-bottom-color: #2496ed;
+}
+
+.favTab.gin.active {
+  border-bottom-color: #00a896;
+}
+
+.favTab.qt.active {
+  border-bottom-color: #41cd52;
+}
+
+.favTab.react.active {
+  border-bottom-color: #61dafb;
+}
+
+.favIcon {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.favIcon.go,
+.favDetailIcon.go {
+  color: #00acd7;
+  background: #00acd722;
+  border: 1px solid #00acd755;
+}
+
+.favIcon.docker,
+.favDetailIcon.docker {
+  color: #2496ed;
+  background: #2496ed22;
+  border: 1px solid #2496ed55;
+}
+
+.favIcon.gin,
+.favDetailIcon.gin {
+  color: #00a896;
+  background: #00a89622;
+  border: 1px solid #00a89655;
+}
+
+.favIcon.qt,
+.favDetailIcon.qt {
+  color: #41cd52;
+  background: #41cd5222;
+  border: 1px solid #41cd5255;
+}
+
+.favIcon.react,
+.favDetailIcon.react {
+  color: #61dafb;
+  background: #61dafb22;
+  border: 1px solid #61dafb;
+}
+
+.favIconLabel {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.favTab.active .favIconLabel {
+  color: #e8e8f0;
+}
+
+.favTab:not(.active) .favIconLabel {
+  color: #6b6b9a;
+}
+
+.favIconText {
+  font-size: 9px;
+  font-weight: 700;
+  border: 0;
+}
+
+.favDetail {
+  background: #080810;
+  padding: 28px 24px;
+}
+
+.favDetailIcon {
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.favDetailIconText {
+  font-size: 18px;
+  font-weight: 700;
+  border: 0;
+}
+
+.favDetailTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 800;
+  margin: 0 0 6px;
+  color: #e8e8f0;
+  letter-spacing: -0.02em;
+}
+
+.favDetailReason {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #9898b8;
+  margin: 0;
+  max-width: 460px;
+}
+
+@media (min-width: 640px) {
+  .favGrid { grid-template-columns: 200px 1fr; }
+  .favTabs { flex-direction: column; }
+  .favTab { border-bottom: none; border-left: 3px solid transparent; padding: 16px 18px; min-width: unset; }
+  .favTab.go.active { border-left-color: #00acd7; }
+  .favTab.docker.active { border-left-color: #2496ed; }
+  .favTab.gin.active { border-left-color: #00a896; }
+  .favTab.qt.active { border-left-color: #41cd52; }
+  .favTab.react.active { border-left-color: #61dafb; }
+  .favDetail { padding: 40px; }
+}
+
+@media (min-width: 960px) {
+  .favGrid { grid-template-columns: 240px 1fr; }
+  .favDetail { padding: 56px; }
+}

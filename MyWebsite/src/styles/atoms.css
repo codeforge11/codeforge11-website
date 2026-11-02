@@ -1,0 +1,62 @@
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.sectionLabelLine {
+  width: 20px;
+  height: 1px;
+  background: #00ff88;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.sectionLabelText {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #00ff88;
+  background: rgba(15, 15, 26, 0.88);
+}
+
+.ratingDots {
+  display: flex;
+  gap: 3px;
+}
+
+.ratingDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 1px;
+  background: #1e1e2e;
+}
+
+.ratingDot.filled {
+  background: #00ff88;
+}
+
+.statusBadge {
+  border-radius: 2px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.statusBadge.active {
+  color: #00ff88;
+  border-color: #00ff8844;
+  background: #00ff880d;
+}
+
+.statusBadge.maintained {
+  color: #4d9eff;
+  border-color: #4d9eff44;
+  background: #4d9eff0d;
+}
+
+.statusBadge.stable {
+  color: #6b6b9a;
+  border-color: #6b6b9a44;
+  background: #6b6b9a0d;
+}
