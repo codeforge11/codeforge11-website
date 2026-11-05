@@ -23,38 +23,38 @@ html {
 
 .mono {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
-  padding: 2px 8px;
+  font-size: 0.625rem;
+  padding: 0.125rem 0.5rem;
   border: auto solid #1e1e2e;
-  border-radius: 3px;
+  border-radius: 0.1875rem;
   color: #6b6b9a;
   letter-spacing: 0.03em;
 }
 
-::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar { width: 0.25rem; }
 ::-webkit-scrollbar-track { background: #080810; }
-::-webkit-scrollbar-thumb { background: #1e1e2e; border-radius: 2px; }
+::-webkit-scrollbar-thumb { background: #1e1e2e; border-radius: 0.125rem; }
 
 ::selection { background: #00ff8833; color: #00ff88; }
 
 .section {
-  padding: 32px 12px;
-  border-bottom: 1px solid #1e1e2e;
+  padding: 2rem 0.75rem;
+  border-bottom: 0.0625rem solid #1e1e2e;
 }
 
 .appContent {
   min-height: 100svh;
-  padding-top: 52px;
+  padding-top: 3.25rem;
 }
-@media (min-width: 768px) { .section { padding: 40px 24px; } }
-@media (min-width: 1200px) { .section { padding: 48px 48px; } }
+@media (min-width: 48rem) { .section { padding: 2.5rem 1.5rem; } }
+@media (min-width: 75rem) { .section { padding: 3rem 3rem; } }
 
 .sectionHeading {
   font-family: 'Outfit', sans-serif;
   font-weight: 800;
-  margin: 0 0 40px;
+  margin: 0 0 2.5rem;
   color: #e8e8f0;
   letter-spacing: -0.02em;
-  font-size: clamp(28px, 5vw, 56px);
+  font-size: clamp(1.75rem, 5vw, 3.5rem);
 }
-@media (min-width: 768px) { .sectionHeading { margin-bottom: 56px; } }
+@media (min-width: 48rem) { .sectionHeading { margin-bottom: 3.5rem; } }

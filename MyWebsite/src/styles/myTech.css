@@ -1,18 +1,18 @@
 .filterBar {
 	display: flex;
-	gap: 6px;
-	margin-bottom: 32px;
+	gap: 0.375rem;
+	margin-bottom: 2rem;
 	flex-wrap: wrap;
 }
 
 .filterButton {
-	padding: 6px 14px;
-	border-radius: 3px;
-	border: 1px solid #1e1e2e;
+	padding: 0.375rem 0.875rem;
+	border-radius: 0.1875rem;
+	border: 0.0625rem solid #1e1e2e;
 	background: rgba(15, 15, 26, 0.88);
 	color: #6b6b9a;
 	font-family: 'JetBrains Mono', monospace;
-	font-size: 10px;
+	font-size: 0.625rem;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
 	cursor: url(src/public/cursor/link.png), pointer;
@@ -33,17 +33,17 @@
 .techGrid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 2px;
+	gap: 0.125rem;
 }
 
 .techCard {
-	padding: 14px 16px;
-	border: 1px solid #1e1e2e;
-	border-radius: 4px;
+	padding: 0.875rem 1rem;
+	border: 0.0625rem solid #1e1e2e;
+	border-radius: 0.25rem;
 	background: #0f0f1a;
 	display: flex;
 	flex-direction: column;
-	gap: 8px;
+	gap: 0.5rem;
 	transition: border-color 0.15s, background 0.15s;
 	cursor: default;
 }
@@ -57,37 +57,37 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	gap: 6px;
+	gap: 0.375rem;
 }
 
 .techName {
 	font-family: 'Outfit', sans-serif;
 	font-weight: 600;
-	font-size: 13px;
+	font-size: 0.8125rem;
 	color: #e8e8f0;
 }
 
 .techCategory {
-	font-size: 8px;
+	font-size: 0.5rem;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
 	color: #3a3a5c;
 	white-space: nowrap;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 30rem) {
 	.techGrid {
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
 	.techGrid {
 		grid-template-columns: repeat(4, 1fr);
 	}
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 68.75rem) {
 	.techGrid {
 		grid-template-columns: repeat(5, 1fr);
 	}

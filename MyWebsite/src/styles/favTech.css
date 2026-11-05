@@ -1,8 +1,8 @@
 .favGrid {
   display: grid;
   grid-template-columns: 1fr;
-  border: 1px solid #1e1e2e;
-  border-radius: 8px;
+  border: 0.0625rem solid #1e1e2e;
+  border-radius: 0.5rem;
   overflow: hidden;
 }
 
@@ -14,16 +14,16 @@
 
 .favTab {
   width: 100%;
-  min-width: 140px;
+  min-width: 8.75rem;
   text-align: left;
-  padding: 14px 16px;
+  padding: 0.875rem 1rem;
   background: transparent;
   border: none;
-  border-bottom: 3px solid transparent;
+  border-bottom: 0.1875rem solid transparent;
   cursor: url(src/public/cursor/link.png), pointer;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
   transition: background 0.15s;
   flex-shrink: 0;
 }
@@ -53,9 +53,9 @@
 }
 
 .favIcon {
-  width: 30px;
-  height: 30px;
-  border-radius: 4px;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 0.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,41 +66,41 @@
 .favDetailIcon.go {
   color: #00acd7;
   background: #00acd722;
-  border: 1px solid #00acd755;
+  border: 0.0625rem solid #00acd755;
 }
 
 .favIcon.docker,
 .favDetailIcon.docker {
   color: #2496ed;
   background: #2496ed22;
-  border: 1px solid #2496ed55;
+  border: 0.0625rem solid #2496ed55;
 }
 
 .favIcon.gin,
 .favDetailIcon.gin {
   color: #00a896;
   background: #00a89622;
-  border: 1px solid #00a89655;
+  border: 0.0625rem solid #00a89655;
 }
 
 .favIcon.qt,
 .favDetailIcon.qt {
   color: #41cd52;
   background: #41cd5222;
-  border: 1px solid #41cd5255;
+  border: 0.0625rem solid #41cd5255;
 }
 
 .favIcon.react,
 .favDetailIcon.react {
   color: #61dafb;
   background: #61dafb22;
-  border: 1px solid #61dafb;
+  border: 0.0625rem solid #61dafb;
 }
 
 .favIconLabel {
   font-family: 'Outfit', sans-serif;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 0.8125rem;
   white-space: nowrap;
 }
 
@@ -113,62 +113,62 @@
 }
 
 .favIconText {
-  font-size: 9px;
+  font-size: 0.5625rem;
   font-weight: 700;
   border: 0;
 }
 
 .favDetail {
   background: #080810;
-  padding: 28px 24px;
+  padding: 1.75rem 1.5rem;
 }
 
 .favDetailIcon {
-  width: 52px;
-  height: 52px;
-  border-radius: 8px;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .favDetailIconText {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   border: 0;
 }
 
 .favDetailTitle {
   font-family: 'Outfit', sans-serif;
-  font-size: clamp(28px, 5vw, 40px);
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
   font-weight: 800;
-  margin: 0 0 6px;
+  margin: 0 0 0.375rem;
   color: #e8e8f0;
   letter-spacing: -0.02em;
 }
 
 .favDetailReason {
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.7;
   color: #9898b8;
   margin: 0;
-  max-width: 460px;
+  max-width: 28.75rem;
 }
 
-@media (min-width: 640px) {
-  .favGrid { grid-template-columns: 200px 1fr; }
+@media (min-width: 40rem) {
+  .favGrid { grid-template-columns: 12.5rem 1fr; }
   .favTabs { flex-direction: column; }
-  .favTab { border-bottom: none; border-left: 3px solid transparent; padding: 16px 18px; min-width: unset; }
+  .favTab { border-bottom: none; border-left: 0.1875rem solid transparent; padding: 1rem 1.125rem; min-width: unset; }
   .favTab.go.active { border-left-color: #00acd7; }
   .favTab.docker.active { border-left-color: #2496ed; }
   .favTab.gin.active { border-left-color: #00a896; }
   .favTab.qt.active { border-left-color: #41cd52; }
   .favTab.react.active { border-left-color: #61dafb; }
-  .favDetail { padding: 40px; }
+  .favDetail { padding: 2.5rem; }
 }
 
-@media (min-width: 960px) {
-  .favGrid { grid-template-columns: 240px 1fr; }
-  .favDetail { padding: 56px; }
+@media (min-width: 60rem) {
+  .favGrid { grid-template-columns: 15rem 1fr; }
+  .favDetail { padding: 3.5rem; }
 }
