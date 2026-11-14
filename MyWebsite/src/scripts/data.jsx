@@ -53,7 +53,7 @@ export const myTech = [
   { name: 'CachyOS',   cat: 'Operating systems', level: 3 },
   { name: 'FreeBSD',   cat: 'Operating systems', level: 2 },
 
-//Langs
+//Languages
   { name: 'JavaScript',  cat: 'Languages', level: 3 },
   { name: 'Go',          cat: 'Languages', level: 4 },
   { name: 'Python',      cat: 'Languages', level: 3 },
