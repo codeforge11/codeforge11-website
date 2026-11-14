@@ -32,9 +32,9 @@
   background: #1e1e2e;
 }
 
-.ratingDot.filled {
+/* .ratingDot.filled {
   background: #00ff88;
-}
+} */
 
 .statusBadge {
   border-radius: 0.125rem;

@@ -9,11 +9,20 @@ export function SectionLabel({ number, children }) {
   )
 }
 
-export function Dots({ filled }) {
+export function Dots({ filled, colors = ["red","orange","yellow","green","blue"] }) {
   return (
     <span className="ratingDots">
-      {Array.from({ length: 5 }).map((_, i) => (
-        <span key={i} className={`ratingDot${i < filled ? ' filled' : ''}`} />
+      {Array.from({ length: 5 }, (_, i) => (
+        <span
+          key={i}
+          className={`ratingDot`}
+          style={
+            i < filled
+              ? { backgroundColor: colors[i] }
+              : undefined
+          }
+          aria-hidden="true"
+        />
       ))}
     </span>
   )
