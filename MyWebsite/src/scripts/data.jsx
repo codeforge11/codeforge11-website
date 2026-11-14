@@ -64,6 +64,7 @@ export const myTech = [
   { name: 'C#',   cat: 'Languages', level: 1 },
   { name: 'Ruby', cat: 'Languages', level: 1 },
   { name: 'PHP',  cat: 'Languages', level: 2 },
+  {name: 'Rust',cat:'Languages',level:1},
 
 //Libs and frameworks
   { name: 'React',       cat: 'Libraries & Frameworks', level: 3 },
